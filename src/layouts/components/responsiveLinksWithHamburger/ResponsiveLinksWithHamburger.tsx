@@ -45,14 +45,14 @@ const ResponsiveLinksWithHamburger = () => {
           <button>
             <Icon
               width={ICON_SIZE_MOBILE}
-              icon="cib:facebook"
+              icon="mdi:facebook"
               className="hover:text-primary"
             />
           </button>
           <button>
             <Icon
               width={ICON_SIZE_MOBILE}
-              icon="cib:instagram"
+              icon="mdi:instagram"
               className="hover:text-primary"
             />
           </button>

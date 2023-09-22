@@ -11,14 +11,14 @@ const Navbar = () => {
         <button>
           <Icon
             width={ICON_SIZE}
-            icon="cib:facebook"
+            icon="mdi:facebook"
             className="hover:text-primary"
           />
         </button>
         <button>
           <Icon
             width={ICON_SIZE}
-            icon="cib:instagram"
+            icon="mdi:instagram"
             className="hover:text-primary"
           />
         </button>
