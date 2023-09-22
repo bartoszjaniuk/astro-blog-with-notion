@@ -41,6 +41,10 @@ a {
   .social {
     @apply hidden lg:flex gap-3 flex-1 items-center;
   }
+
+  .social-mobile {
+    @apply hidden lg:flex gap-3 flex-1 items-center h-28 max-h-16;
+  }
   .links {
     @apply hidden lg:flex flex-1 text-base gap-4 justify-end lg:text-xl lg:gap-5 lg:justify-start;
   }
@@ -106,20 +110,29 @@ a {
     }
   }
 
-  .responsive-links {
+  .responsive-menu {
     position: absolute;
     top: 96px;
     left: 0;
-    background-color: var(--bg);
-    height: calc(100vh - 96px);
     width: 100%;
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    height: calc(100vh - 96px);
+    background-color: var(--bg);
+  }
+
+  .responsive-links {
+    background-color: var(--bg);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 50px;
     font-size: 36px;
-    z-index: 999;
     transition: all 0.2s ease;
   }
 
