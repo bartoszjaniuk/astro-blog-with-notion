@@ -43,7 +43,7 @@ a {
   }
 
   .social-mobile {
-    @apply hidden lg:flex gap-3 flex-1 items-center h-28 max-h-16;
+    @apply flex gap-3 flex-1 items-center h-28 max-h-16;
   }
   .links {
     @apply hidden lg:flex flex-1 text-base gap-4 justify-end lg:text-xl lg:gap-5 lg:justify-start;

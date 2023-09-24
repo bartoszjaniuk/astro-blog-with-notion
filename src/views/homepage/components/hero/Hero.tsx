@@ -1,4 +1,4 @@
-import { Icon } from "@iconify/react/dist/iconify.js";
+import { Icon } from "@iconify/react";
 
 export const Hero = () => {
   return (
@@ -20,7 +20,6 @@ export const Hero = () => {
             <Icon
               width={20}
               icon="mdi:arrow-right"
-              color="white"
               className="text-white text-center h-full"
             />
           </button>
