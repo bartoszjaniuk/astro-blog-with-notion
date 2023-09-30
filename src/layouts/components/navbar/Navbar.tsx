@@ -1,13 +1,10 @@
-import { Icon } from "@iconify/react";
-
 import { MENU_LINKS } from "@layouts/consts/menuLinks";
 import ResponsiveLinksWithHamburger from "../responsiveLinksWithHamburger/ResponsiveLinksWithHamburger";
-import { ICON_SIZE } from "@layouts/consts/iconSize";
 
 const Navbar = () => {
 	return (
 		<nav className="container responsive-padding mx-auto  h-24  flex items-center justify-between">
-			<div className="social">
+			{/* <div className="social">
 				<button>
 					<Icon
 						width={ICON_SIZE}
@@ -22,15 +19,17 @@ const Navbar = () => {
 						className="hover:text-primary"
 					/>
 				</button>
+			</div> */}
+			<div className="logo text-primary font-headings font-bold">
+				Czasopismo Stomatologiczne
 			</div>
-			<div className="logo">Nazwa strony</div>
 			<ResponsiveLinksWithHamburger />
 			<div className="links">
 				{MENU_LINKS.map((link, index) => {
 					if (link.title === "Newsletter") {
 						return (
 							<a
-								className="text-primary font-semibold "
+								className="text-primary font-semibold md:text-base"
 								key={index}
 								href={link.path}
 								onClick={(e) => e.preventDefault()}
@@ -41,7 +40,7 @@ const Navbar = () => {
 					}
 					return (
 						<a
-							className="relative text-xl w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-primary after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-500 after:origin-center whitespace-nowrap	"
+							className="relative text-xl md:text-base w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-primary after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-500 after:origin-center whitespace-nowrap	"
 							key={index}
 							href={link.path}
 						>

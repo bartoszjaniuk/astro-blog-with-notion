@@ -12,7 +12,7 @@ export const CONTACT_DATA = {
 			position: "Dyrektor Marketingu i Reklamy",
 			imageURL: "/images/profilowe-2.png",
 			phoneNumber: "+48 797 125 417",
-			mail: "katarzyna.kajstura@tworzywasztuczne.biz",
+			mail: "katarzyna.mazur@tworzywasztuczne.biz",
 		},
 	],
 };

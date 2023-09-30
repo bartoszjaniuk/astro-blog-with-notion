@@ -4,44 +4,44 @@ import { MENU_LINKS } from "@layouts/consts/menuLinks";
 import { useState } from "react";
 
 const ResponsiveLinksWithHamburger = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const toggleButton = () => setIsOpen((prev) => !prev);
+	const [isOpen, setIsOpen] = useState(false);
+	const toggleButton = () => setIsOpen((prev) => !prev);
 
-  return (
-    <>
-      <button className="burger" onClick={toggleButton}>
-        <span className={`${isOpen ? "opened" : ""} line`} />
-        <span className={`${isOpen ? "opened" : ""} line`} />
-        <span className={`${isOpen ? "opened" : ""} line`} />
-      </button>
-      <div className={`${isOpen ? "" : "hidden"} responsive-menu lg:hidden`}>
-        <div className="responsive-links">
-          {MENU_LINKS.map((link, index) => {
-            if (link.title === "Newsletter") {
-              return (
-                <a
-                  className="text-primary font-semibold "
-                  key={index}
-                  href={link.path}
-                  onClick={(e) => e.preventDefault()}
-                >
-                  {link.title}
-                </a>
-              );
-            }
-            return (
-              <a
-                className="relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-primary after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-500 after:origin-center"
-                key={index}
-                href={link.path}
-              >
-                {link.title}
-              </a>
-            );
-          })}
-        </div>
+	return (
+		<>
+			<button className="burger" onClick={toggleButton}>
+				<span className={`${isOpen ? "opened" : ""} line`} />
+				<span className={`${isOpen ? "opened" : ""} line`} />
+				<span className={`${isOpen ? "opened" : ""} line`} />
+			</button>
+			<div className={`${isOpen ? "" : "hidden"} responsive-menu lg:hidden`}>
+				<div className="responsive-links">
+					{MENU_LINKS.map((link, index) => {
+						if (link.title === "Newsletter") {
+							return (
+								<a
+									className="text-primary font-semibold "
+									key={index}
+									href={link.path}
+									onClick={(e) => e.preventDefault()}
+								>
+									{link.title}
+								</a>
+							);
+						}
+						return (
+							<a
+								className="relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-primary after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-500 after:origin-center"
+								key={index}
+								href={link.path}
+							>
+								{link.title}
+							</a>
+						);
+					})}
+				</div>
 
-        <div className="social-mobile">
+				{/* <div className="social-mobile">
           <button>
             <Icon
               width={ICON_SIZE_MOBILE}
@@ -56,10 +56,10 @@ const ResponsiveLinksWithHamburger = () => {
               className="hover:text-primary"
             />
           </button>
-        </div>
-      </div>
-    </>
-  );
+        </div> */}
+			</div>
+		</>
+	);
 };
 
 export default ResponsiveLinksWithHamburger;
