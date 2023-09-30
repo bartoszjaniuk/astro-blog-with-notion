@@ -2,6 +2,7 @@
 import '../globals.css';
 import BaseSEO from '@layouts/components/BaseSEO.astro';
 import Navbar from '@layouts/components/navbar/Navbar'
+import Footer from '@layouts/components/footer/Footer'
 
 
 interface Props {
@@ -29,6 +30,7 @@ const { title, description } = Astro.props;
 		<div class="min-h-screen">
 			<Navbar client:load/>
 			<slot />
+			<Footer/>
 		</div>
 	</body>
 </html>

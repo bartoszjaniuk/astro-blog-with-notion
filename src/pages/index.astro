@@ -1,9 +1,32 @@
 ---
 import Homepage from '@views/homepage/Homepage.astro'
 import Layout from '../layouts/Layout.astro';
+import { getPosts } from 'src/lib/notion/posts';
+import { NUMBER_OF_POSTS_PER_PAGE } from 'src/consts/notion';
+import { getAllTags } from 'src/lib/notion/tags';
+const [posts, tags] = await Promise.all([
+  getPosts(NUMBER_OF_POSTS_PER_PAGE),
+  getAllTags(),
+])
+
+console.log({posts, tags});
+
 ---
 
 <Layout title="Page title" description='Page description'>
   <Homepage/>
+
+  
+<!--   
+
+  <div>
+    { posts.length === 0 ? 'No content' :
+    posts.map((post) => (
+    <div class="border border-red-500" key={post.Slug}>
+      {post.Title}
+      </div>
+  ))
+  </div>
+} -->
 </Layout>
 
