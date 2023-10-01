@@ -172,9 +172,10 @@ a {
 		position: fixed;
 		top: 96px;
 		padding: 2rem 0;
+		overflow-y: auto;
 
 		body {
-			overflow: hidden;
+			overflow-y: hidden;
 		}
 	}
 
