@@ -64,7 +64,7 @@ a {
 	}
 
 	.border-fancy {
-		border-radius: 68% 32% 70% 30% / 39% 54% 46% 61%;
+		border-radius: 10rem;
 	}
 
 	.bg-shape {
@@ -75,7 +75,7 @@ a {
 		height: 100%;
 		background: var(--primary);
 		z-index: -1;
-		border-radius: 68% 32% 70% 30% / 39% 54% 46% 61%;
+		border-radius: 10rem;
 	}
 
 	.primary-selection {
@@ -158,6 +158,11 @@ a {
 		z-index: 999;
 		height: calc(100vh - 96px);
 		background-color: var(--bg);
+		overflow-y: auto;
+
+		body {
+			overflow-y: hidden;
+		}
 	}
 
 	.responsive-links {
@@ -172,11 +177,6 @@ a {
 		position: fixed;
 		top: 96px;
 		padding: 2rem 0;
-		overflow-y: auto;
-
-		body {
-			overflow-y: hidden;
-		}
 	}
 
 	.responsive-padding {
