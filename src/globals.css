@@ -52,7 +52,7 @@ a {
 	}
 
 	.logo {
-		@apply flex-1 text-left lg:text-center text-2xl lg:text-3xl xl:text-3xl;
+		@apply text-left lg:text-center text-2xl lg:text-3xl xl:text-3xl;
 	}
 
 	.burger {
@@ -119,6 +119,7 @@ a {
 
 	.opened {
 		overflow-x: hidden;
+		transition: transform 2s ease;
 		&:first-child {
 			transform: translateY(10px) rotate(45deg);
 		}
@@ -126,7 +127,7 @@ a {
 		&:nth-child(2) {
 			opacity: 0;
 			transition: opacity 0.2s ease, transform 0.2s ease;
-			transform: translateX(500%);
+			transform: translateX(0);
 		}
 
 		&:last-child {
@@ -166,7 +167,7 @@ a {
 		align-items: center;
 		justify-content: center;
 		gap: 50px;
-		font-size: 36px;
+		font-size: 24px;
 		transition: all 0.2s ease;
 	}
 

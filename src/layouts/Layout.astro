@@ -29,7 +29,7 @@ const { title, description } = Astro.props;
 	<body>
 		<div class="min-h-screen">
 			<Navbar client:load/>
-			<slot />
+			<div class="pt-[96px]"><slot /></div>
 			<Footer client:load/>
 		</div>
 	</body>
