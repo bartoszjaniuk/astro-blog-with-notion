@@ -67,7 +67,7 @@ a {
 	}
 
 	.border-fancy {
-		border-radius: 10rem;
+		border-radius: 1rem;
 	}
 
 	.bg-shape {
@@ -78,7 +78,7 @@ a {
 		height: 100%;
 		background: var(--primary);
 		z-index: -1;
-		border-radius: 10rem;
+		border-radius: 1rem;
 	}
 
 	.primary-selection {
