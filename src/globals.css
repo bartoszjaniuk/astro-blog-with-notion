@@ -158,7 +158,7 @@ a {
 		z-index: 999;
 		height: calc(100vh - 96px);
 		background-color: var(--bg);
-		overflow-y: auto;
+		overflow-y: scroll;
 
 		body {
 			overflow-y: hidden;
@@ -171,12 +171,13 @@ a {
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		gap: 46px;
+		gap: 24px;
 		font-size: 24px;
 		transition: all 0.2s ease;
 		position: fixed;
 		top: 96px;
 		padding: 2rem 0;
+		overflow-y: scroll;
 	}
 
 	.responsive-padding {
