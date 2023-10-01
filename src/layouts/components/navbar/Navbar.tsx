@@ -3,24 +3,8 @@ import ResponsiveLinksWithHamburger from "../responsiveLinksWithHamburger/Respon
 
 const Navbar = () => {
 	return (
-		<div className="bg-[RGBA(255,255,255,0.95)] w-full fixed z-50">
-			<nav className="container responsive-padding mx-auto  h-24  flex items-center justify-between ">
-				{/* <div className="social">
-				<button>
-					<Icon
-						width={ICON_SIZE}
-						icon="mdi:facebook"
-						className="hover:text-primary"
-					/>
-				</button>
-				<button>
-					<Icon
-						width={ICON_SIZE}
-						icon="mdi:instagram"
-						className="hover:text-primary"
-					/>
-				</button>
-			</div> */}
+		<div className="bg-white w-full fixed z-50">
+			<nav className="container responsive-padding mx-auto  h-24  flex items-center justify-between">
 				<div className="logo text-primary font-headings font-bold w-full">
 					Czasopismo Stomatologiczne
 				</div>

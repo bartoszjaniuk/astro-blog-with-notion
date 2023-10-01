@@ -40,6 +40,9 @@ a {
 }
 
 @layer components {
+	.screen-h-navbar {
+		height: calc(100vh - 96px);
+	}
 	.social {
 		@apply hidden lg:flex gap-3 flex-1 items-center;
 	}
@@ -143,41 +146,6 @@ a {
 			transition: opacity 0.2s 0.2s ease, transform 0.2s 0.2s ease;
 			width: 60%;
 		}
-	}
-
-	.responsive-menu {
-		position: absolute;
-		top: 96px;
-		left: 0;
-		width: 100%;
-		display: flex;
-		gap: 1rem;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		z-index: 999;
-		height: calc(100vh - 96px);
-		background-color: var(--bg);
-		overflow-y: scroll;
-
-		body {
-			overflow-y: hidden;
-		}
-	}
-
-	.responsive-links {
-		background-color: var(--bg);
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		gap: 24px;
-		font-size: 24px;
-		transition: all 0.2s ease;
-		position: fixed;
-		top: 96px;
-		padding: 2rem 0;
-		overflow-y: scroll;
 	}
 
 	.responsive-padding {

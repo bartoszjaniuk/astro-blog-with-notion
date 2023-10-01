@@ -7,6 +7,7 @@ module.exports = {
 				primary: "#00BFA6",
 				secondary: "#00ab95",
 				softBg: "#fafafa",
+				navbar: "rgba(255, 255, 255, 0.95)",
 			},
 			backgroundImage: {
 				contactBg: "url('/images/contact-bg.png')",
