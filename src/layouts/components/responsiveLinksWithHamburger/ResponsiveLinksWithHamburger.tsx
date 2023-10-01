@@ -14,11 +14,7 @@ const ResponsiveLinksWithHamburger = () => {
 				<span className={`${isOpen ? "opened" : ""} line`} />
 				<span className={`${isOpen ? "opened" : ""} line`} />
 			</button>
-			<div
-				className={`${
-					isOpen ? "" : "hidden"
-				} responsive-menu lg:hidden overflow-y-auto`}
-			>
+			<div className={`${isOpen ? "" : "hidden"} responsive-menu lg:hidden`}>
 				<div className="responsive-links">
 					{MENU_LINKS.map((link, index) => {
 						if (link.title === "Newsletter") {
