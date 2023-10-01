@@ -171,7 +171,11 @@ a {
 		transition: all 0.2s ease;
 		position: fixed;
 		top: 96px;
-		padding: 0 2rem;
+		padding: 2rem 0;
+
+		body {
+			overflow: hidden;
+		}
 	}
 
 	.responsive-padding {
