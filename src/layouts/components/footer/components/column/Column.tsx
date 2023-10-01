@@ -43,7 +43,7 @@ export const Column = ({ entries, heading, gridColumn }: ColumnProps) => {
 					return (
 						<p
 							key={index}
-							className="text-md sm:text-base 2xl:text-lg font-thin  text-start"
+							className="text-sm sm:text-base 2xl:text-lg font-thin  text-start"
 						>
 							{entry.content}
 						</p>
@@ -52,7 +52,7 @@ export const Column = ({ entries, heading, gridColumn }: ColumnProps) => {
 					return (
 						<a
 							key={index}
-							className="text-md sm:text-base 2xl:text-lgfont-medium text-start underline"
+							className="text-sm sm:text-base 2xl:text-lgfont-medium text-start underline"
 							href={entry.link}
 						>
 							{entry.content}
@@ -62,16 +62,16 @@ export const Column = ({ entries, heading, gridColumn }: ColumnProps) => {
 					return (
 						<div key={index} className="flex flex-col gap-4 b ">
 							{entry.title && (
-								<h5 className="text-md sm:text-base 2xl:text-lg font-medium text-start">
+								<h5 className="text-sm sm:text-base 2xl:text-lg font-medium text-start">
 									{entry.title}
 								</h5>
 							)}
 							<div key={index} className="flex gap-1 items-center">
 								{entry.icon === "phone" && (
 									<>
-										<p className="text-md sm:text-base 2xl:text-lg">Tel.</p>
+										<p className="text-sm sm:text-base 2xl:text-lg">Tel.</p>
 										<a
-											className="text-md sm:text-base 2xl:text-lg"
+											className="text-sm sm:text-base 2xl:text-lg"
 											href={`tel${entry.content}`}
 										>
 											{entry.content}
@@ -80,9 +80,9 @@ export const Column = ({ entries, heading, gridColumn }: ColumnProps) => {
 								)}
 								{entry.icon === "mail" && (
 									<>
-										<p className="text-md sm:text-base 2xl:text-lg">Mail:</p>
+										<p className="text-sm sm:text-base 2xl:text-lg">Mail:</p>
 										<a
-											className="text-md sm:text-base 2xl:text-lg underline"
+											className="text-sm sm:text-base 2xl:text-lg underline"
 											href={`tel${entry.content}`}
 										>
 											{entry.content}
