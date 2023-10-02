@@ -1,11 +1,16 @@
-import { Icon } from "@iconify/react";
-import { ICON_SIZE, ICON_SIZE_MOBILE } from "@layouts/consts/iconSize";
 import { MENU_LINKS } from "@layouts/consts/menuLinks";
-import { useState } from "react";
+import { useLayoutEffect, useState } from "react";
 
 const ResponsiveLinksWithHamburger = () => {
 	const [isOpen, setIsOpen] = useState(false);
 	const toggleButton = () => setIsOpen((prev) => !prev);
+	useLayoutEffect(() => {
+		if (isOpen) {
+			document.body.classList.add("overflow-y-hidden");
+		} else {
+			document.body.classList.remove("overflow-y-hidden");
+		}
+	}, [isOpen]);
 
 	return (
 		<>
