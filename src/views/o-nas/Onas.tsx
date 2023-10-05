@@ -24,8 +24,8 @@ export const Onas = () => {
 					</div>
 				</span>
 			</div> */}
-			<div className="container mx-auto responsive-padding grid grid-cols-1 lg:grid-cols-2 pt-10 gap-8">
-				<div className="lg:col-start-1 lg:col-end-2 pt-24 h-full">
+			<div className="container mx-auto responsive-padding grid grid-cols-1 lg:grid-cols-2 pt-10 lg:gap-8">
+				<div className="lg:col-start-1 lg:col-end-2 lg:pt-24 h-full">
 					<h1 className="text-4xl font-bold lg:text-5xl xl:text-7xl ">
 						<p>Poznaj nasze </p>
 						<p>czasopismo </p>
@@ -51,13 +51,13 @@ export const Onas = () => {
 						/>
 					</div>
 					<div className="lg:col-start-2 lg:col-end-3 h-full">
-						<h3 className="text-white text-4xl mb-4">
+						<h3 className="text-white text-3xl lg:text-4xl mb-4 mt-4">
 							W czasopiśmie poruszymy tematykę:
 						</h3>
 						<ul className="list-disc list-inside">
 							{dentalFields.map((field, index) => (
 								<li
-									className="text-white  text-2xl font-light font-headings"
+									className="text-white  text-xl lg:text-2xl font-light font-headings"
 									key={index}
 								>
 									{field}
@@ -67,9 +67,9 @@ export const Onas = () => {
 					</div>
 				</div>
 			</div>
-			<div className="py-16 bg-white">
+			<div className="py-8 lg:py-16 bg-white">
 				<div className="container mx-auto responsive-padding flex flex-col gap-3">
-					<h3 className="text-5xl text-primary  font-light">
+					<h3 className="text-4xl  lg:text-5xl text-primary  font-light">
 						Czasopismo będzie promowane <br /> na imprezach branżowych w kraju,
 						<br /> zarówno w formie elektronicznej jak i drukowanej.
 					</h3>
@@ -82,13 +82,13 @@ export const Onas = () => {
 						<source src="/videos/krakdent.mp4" type="video/mp4" />
 						Przeglądarka nie jest wspierana.
 					</video>
-					<p className="absolute bottom-0 right-0 text-white z-10">
+					<p className="absolute bottom-0 right-0 text-white z-10 text-xs lg:text-base">
 						Źródlo: Sztuka stomatologii - KRAKDENT 29. Międzynarodowe Targi
 						Stomatologiczne w Krakowie
 					</p>
 				</div>
 
-				<div className="container mx-auto responsive-padding flex flex-col gap-4">
+				<div className="container mx-auto responsive-padding flex flex-col gap-8 py-8">
 					{list.map((field, index) => {
 						if (index % 2 == 0) {
 							return (
