@@ -11,10 +11,14 @@ export const Hero = () => {
 					<h1 className="text-4xl font-bold lg:text-5xl xl:text-6xl">
 						Czasopismo Stomatologiczne
 					</h1>
+
 					<p className="text-lg lg:text-xl">
-						Odkryj najnowsze <span className="text-primary">innowacje</span>{" "}
-						<br />w świecie maszyn
-						<span className="text-primary"> stomatologii</span>.
+						Strona przeznaczona dla{" "}
+						<span className="text-primary">specjalistów</span> poszukujących
+						ofert i informacji o{" "}
+						<span className="text-primary">sprzęcie stomatologicznym</span>,
+						wyrobach oraz materiałach, a także o tym czym kierować się przy ich
+						wyborze.
 					</p>
 					<button className="bg-primary hover:bg-secondary text-white  py-2 rounded w-fit px-6 flex gap-2">
 						Sprawdź juz teraz

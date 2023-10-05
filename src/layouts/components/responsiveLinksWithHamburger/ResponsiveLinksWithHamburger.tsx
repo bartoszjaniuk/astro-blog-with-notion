@@ -1,7 +1,15 @@
 import { MENU_LINKS } from "@layouts/consts/menuLinks";
 import { useLayoutEffect, useState } from "react";
 
-const ResponsiveLinksWithHamburger = () => {
+type ResponsiveLinksWithHamburgerProps = {
+	toggleModal: VoidFunction;
+	handleRedirectToActualMagazinePage: VoidFunction;
+};
+
+const ResponsiveLinksWithHamburger = ({
+	toggleModal,
+	handleRedirectToActualMagazinePage,
+}: ResponsiveLinksWithHamburgerProps) => {
 	const [isOpen, setIsOpen] = useState(false);
 	const toggleButton = () => setIsOpen((prev) => !prev);
 	useLayoutEffect(() => {
@@ -32,6 +40,22 @@ const ResponsiveLinksWithHamburger = () => {
 								key={index}
 								href={link.path}
 								onClick={(e) => e.preventDefault()}
+							>
+								{link.title}
+							</a>
+						);
+					}
+					if (link.title === "Aktualny numer") {
+						return (
+							<a
+								className="relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-primary after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-500 after:origin-center"
+								key={index}
+								href="/"
+								onClick={(e) => {
+									e.preventDefault();
+									handleRedirectToActualMagazinePage();
+									setIsOpen(false);
+								}}
 							>
 								{link.title}
 							</a>

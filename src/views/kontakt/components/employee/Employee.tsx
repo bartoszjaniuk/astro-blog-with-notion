@@ -37,7 +37,7 @@ export const Employee = ({ employee }: EmployeeProps) => {
 				<div className="flex gap-2 items-center">
 					<Icon icon="mdi:email-outline" width={ICON_SIZE} />
 					<a
-						className="underline text-md 2xl:text-2xl"
+						className="underline text-md 2xl:text-2xl text-thirdnary"
 						href={`mailto:${employee.mail}`}
 					>
 						{employee.mail}

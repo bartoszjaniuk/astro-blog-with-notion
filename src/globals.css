@@ -8,7 +8,7 @@
 	--textColor: black;
 	--softBg: #f0f0f0;
 	--softTextColor: #626262;
-	--primary: #00bfa6;
+	--primary: #0097dd;
 }
 
 * {
@@ -55,7 +55,7 @@ a {
 	}
 
 	.logo {
-		@apply text-left lg:text-center text-2xl lg:text-3xl xl:text-3xl;
+		@apply text-2xl lg:text-3xl xl:text-3xl;
 	}
 
 	.burger {
@@ -66,8 +66,42 @@ a {
 		@apply bg-contactBlury absolute bottom-[40%] left-[100%] w-full lg:w-screen h-[60%] after:content-[''] -z-[1] bg-no-repeat;
 	}
 
+	.video-bg {
+		@apply absolute top-0 left-0 h-full w-full z-[-1] opacity-[0.15] overflow-hidden;
+	}
+
+	.video-content {
+		@apply w-full h-full object-cover;
+	}
+
 	.border-fancy {
 		border-radius: 1rem;
+	}
+
+	.animation-float {
+		animation: float 6s ease-in-out infinite;
+	}
+
+	@keyframes float {
+		0% {
+			transform: translatey(0px);
+		}
+		50% {
+			transform: translatey(-20px);
+		}
+		100% {
+			transform: translatey(0px);
+		}
+	}
+
+	.clipped-bg {
+		background: var(--primary);
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 50%;
+		height: 100%;
+		z-index: -1;
 	}
 
 	.bg-shape {
@@ -77,6 +111,16 @@ a {
 		width: 100%;
 		height: 100%;
 		background: var(--primary);
+		z-index: -1;
+		border-radius: 1rem;
+	}
+	.bg-shape-white {
+		position: absolute;
+		top: 5%;
+		left: -5%;
+		width: 100%;
+		height: 100%;
+		background: #fff;
 		z-index: -1;
 		border-radius: 1rem;
 	}

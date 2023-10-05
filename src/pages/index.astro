@@ -1,19 +1,19 @@
 ---
 import Homepage from '@views/homepage/Homepage.astro'
 import Layout from '../layouts/Layout.astro';
-import { getPosts } from 'src/lib/notion/posts';
-import { NUMBER_OF_POSTS_PER_PAGE } from 'src/consts/notion';
-import { getAllTags } from 'src/lib/notion/tags';
-const [posts, tags] = await Promise.all([
-  getPosts(NUMBER_OF_POSTS_PER_PAGE),
-  getAllTags(),
-])
+// import { getPosts } from 'src/lib/notion/posts';
+// import { NUMBER_OF_POSTS_PER_PAGE } from 'src/consts/notion';
+// import { getAllTags } from 'src/lib/notion/tags';
+// const [posts, tags] = await Promise.all([
+//   getPosts(NUMBER_OF_POSTS_PER_PAGE),
+//   getAllTags(),
+// ])
 
-console.log({posts, tags});
+
 
 ---
 
-<Layout title="Page title" description='Page description'>
+<Layout title="Czasomismo stomatologiczne" description='Strona przeznaczona dla specjalistów poszukujących ofert i informacji o sprzęcie stomatologicznym, wyrobach oraz materiałach, a także o tym czym kierować się przy ich wyborze.'>
   <Homepage/>
 
   

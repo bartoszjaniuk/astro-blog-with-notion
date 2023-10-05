@@ -1,0 +1,172 @@
+import React from "react";
+import { Card } from "./components/card/Card";
+
+export const Onas = () => {
+	return (
+		<>
+			{/* <div className="h-[500px] lg:h-[600px] 2xl-h-[900px] w-full relative container mx-auto flex pt-16 responsive-padding">
+				<h1 className="text-4xl font-bold lg:text-5xl xl:text-6xl ">
+					Poznaj nasze <br /> czasopismo <br /> stomatologiczne
+				</h1>
+				<span className="clipped-bg responsive-padding text-white flex items-center text-2xl font-headings rounded-lg">
+					<div className="primary-selection">
+						<p className="font-semibold text-4xl py-2">
+							Sprzęt Stomatologiczny
+						</p>
+						to kwartalnik techniczno-informacyjny, który skierowany będzie do
+						profesjonalistów zawodowo związanych z branżą stomatologiczną, kadry
+						zarządzającej w klinikach i gabinetach. Periodyk przeznaczony będzie
+						dla lekarzy stomatologów prowadzących zarówno gabinety, jak i
+						kliniki stomatologiczne oraz właścicieli pracowni rentgenowskich,
+						dla protetyków, a także do higienistek i asystentek dentystycznych,
+						jak również do wszystkich zainteresowanych szeroką tematyką
+						stomatologiczną.
+					</div>
+				</span>
+			</div> */}
+			<div className="container mx-auto responsive-padding grid grid-cols-1 lg:grid-cols-2 pt-10 gap-8">
+				<div className="lg:col-start-1 lg:col-end-2 pt-24 h-full">
+					<h1 className="text-4xl font-bold lg:text-5xl xl:text-7xl ">
+						<p>Poznaj nasze </p>
+						<p>czasopismo </p>
+						<p className="text-primary">stomatologiczne</p>
+					</h1>
+				</div>
+				<div className="lg:col-start-2 lg:col-end-3 grid h-[700px]">
+					<img
+						className="h-[90%] animation-float"
+						src="/images/about/about_magazine.svg"
+						alt="about"
+					/>
+				</div>
+			</div>
+			<div className="bg-primary">
+				<div className="container mx-auto responsive-padding grid grid-cols-1 lg:grid-cols-2 py-16 gap-8">
+					<div className="lg:col-start-1 lg:col-end-2 relative z-10">
+						<span className="bg-shape-white" />
+						<img
+							className="rounded-lg"
+							src="/images/gabinet.jpg"
+							alt="gabinet stomatologiczny"
+						/>
+					</div>
+					<div className="lg:col-start-2 lg:col-end-3 h-full">
+						<h3 className="text-white text-4xl mb-4">
+							W czasopiśmie poruszymy tematykę:
+						</h3>
+						<ul className="list-disc list-inside">
+							{dentalFields.map((field, index) => (
+								<li
+									className="text-white  text-2xl font-light font-headings"
+									key={index}
+								>
+									{field}
+								</li>
+							))}
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div className="py-16 bg-white">
+				<div className="container mx-auto responsive-padding flex flex-col gap-3">
+					<h3 className="text-5xl text-primary  font-light">
+						Czasopismo będzie promowane <br /> na imprezach branżowych w kraju,
+						<br /> zarówno w formie elektronicznej jak i drukowanej.
+					</h3>
+				</div>
+			</div>
+
+			<div className=" py-8 relative">
+				<div className="video-bg">
+					<video className="video-content" muted loop autoPlay>
+						<source src="/videos/krakdent.mp4" type="video/mp4" />
+						Przeglądarka nie jest wspierana.
+					</video>
+					<p className="absolute bottom-0 right-0 text-white z-10">
+						Źródlo: Sztuka stomatologii - KRAKDENT 29. Międzynarodowe Targi
+						Stomatologiczne w Krakowie
+					</p>
+				</div>
+
+				<div className="container mx-auto responsive-padding flex flex-col gap-4">
+					{list.map((field, index) => {
+						if (index % 2 == 0) {
+							return (
+								<Card
+									key={index}
+									text={field.text}
+									imagePath={field.imagePath}
+									direction="mr-auto"
+								/>
+							);
+						}
+						return (
+							<Card
+								key={index}
+								text={field.text}
+								imagePath={field.imagePath}
+								direction="ml-auto"
+							/>
+						);
+					})}
+				</div>
+			</div>
+		</>
+	);
+};
+
+const dentalFields = [
+	"chirurgii stomatologicznej",
+	"implantologii",
+	"narzędzi dentystycznych",
+	"oprogramowania i systemów informatycznych",
+	"produktów do gabinetów stomatologicznych",
+	"profilaktyki",
+	"protetyki",
+	"radiologii",
+	"wyposażenia i sprzętu do gabinetów",
+	"pedodoncji",
+	"usług z zakresu stomatologii",
+	"kursów, szkoleń, targów",
+];
+
+const magazineList = [
+	"Czasopismo promowane będzie na imprezach branżowych w kraju, zarówno w formie elektronicznej jak i drukowanej.",
+	"Pierwsze wydanie otrzymają uczestnicy 30. Międzynarodowych Targów Dentystycznych „Krakdent” w Krakowie w kwietniu 2024 roku.",
+	"Skupimy się na opisie narzędzi, sprzętu i materiałów stomatologicznych oraz na tym, czym kierować się przy ich zakupie i konserwacji.",
+	"Na bieżąco zamieszczać będziemy porady z zakresu wyposażenia gabinetów stomatologicznych, skierowane do lekarzy prowadzących praktykę lub zamierzających podjąć wyzwanie związane z uruchomieniem i prowadzeniem działalności lekarsko-dentystycznej.",
+	"Będziemy poruszać również tematykę związaną z zasadami i procedurami pracy w gabinecie stomatologicznym.",
+	"Czasopismo wydawane będzie głównie w formie elektronicznej, a przy okazji wydarzeń branżowych planowany jest także nakład drukowany.",
+	"Uruchomiona już jest strona internetowa www.e-stomatolog.pl, na której zamieszczane będą elektroniczne wydania czasopisma oraz informacje prasowe.",
+];
+
+const list = [
+	{
+		imagePath: "/images/about/share.svg",
+		text: "Czasopismo promowane będzie na imprezach branżowych w kraju, zarówno w formie elektronicznej jak i drukowanej.",
+	},
+	{
+		imagePath: "/images/about/world.svg",
+		text: "Pierwsze wydanie otrzymają uczestnicy 30. Międzynarodowych Targów Dentystycznych „Krakdent” w Krakowie w kwietniu 2024 roku.",
+	},
+	{
+		imagePath: "/images/about/scientist.svg",
+		text: "Skupimy się na opisie narzędzi, sprzętu i materiałów stomatologicznych oraz na tym, czym kierować się przy ich zakupie i konserwacji.",
+	},
+	{
+		imagePath: "/images/about/chat.svg",
+		text: "Na bieżąco zamieszczać będziemy porady z zakresu wyposażenia gabinetów stomatologicznych, skierowane do lekarzy prowadzących praktykę lub zamierzających podjąć wyzwanie związane z uruchomieniem i prowadzeniem działalności lekarsko-dentystycznej.",
+	},
+	{
+		imagePath: "/images/about/team.svg",
+		text: "Będziemy poruszać również tematykę związaną z zasadami i procedurami pracy w gabinecie stomatologicznym.",
+	},
+	{
+		imagePath: "/images/about/conversation.svg",
+		text: "Czasopismo wydawane będzie głównie w formie elektronicznej, a przy okazji wydarzeń branżowych planowany jest także nakład drukowany.",
+	},
+	{
+		imagePath: "/images/about/reminder.svg",
+		text: "Uruchomiona już jest strona internetowa www.e-stomatolog.pl, na której zamieszczane będą elektroniczne wydania czasopisma oraz informacje prasowe.",
+	},
+];

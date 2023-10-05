@@ -4,8 +4,9 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
-				primary: "#00BFA6",
-				secondary: "#00ab95",
+				primary: "#0097DD",
+				secondary: "#00CBFF",
+				thirdnary: "#024CE0",
 				softBg: "#fafafa",
 				navbar: "rgba(255, 255, 255, 0.95)",
 			},
