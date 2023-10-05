@@ -8,7 +8,7 @@ export const Sections = () => {
 				className="container mx-auto h-auto py-8 lg:h-[500px] items-center grid grid-cols-1 lg:grid-cols-4 gap-8 responsive-padding "
 			>
 				<div
-					onClick={() => redirectTo("o-nas")}
+					onClick={() => redirectTo("o-czasopismie")}
 					className="h-[350px] shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px] p-4 relative cursor-pointer"
 				>
 					<span className="card-background" />

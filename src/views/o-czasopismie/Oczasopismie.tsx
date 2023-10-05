@@ -1,7 +1,6 @@
-import React from "react";
 import { Card } from "./components/card/Card";
 
-export const Onas = () => {
+export const Oczasopismie = () => {
 	return (
 		<>
 			{/* <div className="h-[500px] lg:h-[600px] 2xl-h-[900px] w-full relative container mx-auto flex pt-16 responsive-padding">
