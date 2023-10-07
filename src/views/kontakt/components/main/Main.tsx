@@ -63,7 +63,7 @@ export const Main = () => {
 
 						<img
 							className="rounded-md"
-							src="/images/contact-img.jpg"
+							src="/images/contact/contact-img.jpg"
 							alt="Lekarz oraz lekarka"
 							width={600}
 							height={600}

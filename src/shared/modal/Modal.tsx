@@ -1,4 +1,4 @@
-import { useLayoutEffect, type PropsWithChildren } from "react";
+import * as React from "react";
 
 type ModalProps = {
 	toggleModal: VoidFunction;
@@ -11,8 +11,8 @@ export const Modal = ({
 	toggleModal,
 	title,
 	children,
-}: PropsWithChildren<ModalProps>) => {
-	useLayoutEffect(() => {
+}: React.PropsWithChildren<ModalProps>) => {
+	React.useLayoutEffect(() => {
 		if (isModalVisible) {
 			document.body.classList.add("overflow-y-hidden");
 		} else {

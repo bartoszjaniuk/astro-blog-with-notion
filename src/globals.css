@@ -63,7 +63,7 @@ a {
 	}
 
 	.bg-before {
-		@apply bg-contactBlury absolute bottom-[40%] left-[100%] w-full lg:w-screen h-[60%] after:content-[''] -z-[1] bg-no-repeat;
+		@apply bg-contactShape absolute bottom-[40%] left-[100%] w-full lg:w-screen h-[60%] after:content-[''] -z-[1] bg-no-repeat;
 	}
 
 	.video-bg {
@@ -78,8 +78,18 @@ a {
 		border-radius: 1rem;
 	}
 
+	.about-abstract-shape {
+		& ::before {
+			@apply content-[''] absolute right-[10%] top-[70%] lg:left-0 lg:top-[40%] lg:right-0 w-full h-[440px] lg:h-full z-[-1] bg-aboutShape bg-no-repeat;
+		}
+	}
+
 	.animation-float {
 		animation: float 6s ease-in-out infinite;
+	}
+
+	.cookies {
+		@apply fixed bottom-0 left-0 z-40 shadow-sm bg-white;
 	}
 
 	@keyframes float {

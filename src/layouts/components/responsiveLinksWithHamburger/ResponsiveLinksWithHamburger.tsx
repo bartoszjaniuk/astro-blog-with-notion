@@ -1,5 +1,5 @@
 import { MENU_LINKS } from "@layouts/consts/menuLinks";
-import { useLayoutEffect, useState } from "react";
+import * as React from "react";
 
 type ResponsiveLinksWithHamburgerProps = {
 	toggleModal: VoidFunction;
@@ -10,9 +10,9 @@ const ResponsiveLinksWithHamburger = ({
 	toggleModal,
 	handleRedirectToActualMagazinePage,
 }: ResponsiveLinksWithHamburgerProps) => {
-	const [isOpen, setIsOpen] = useState(false);
+	const [isOpen, setIsOpen] = React.useState(false);
 	const toggleButton = () => setIsOpen((prev) => !prev);
-	useLayoutEffect(() => {
+	React.useLayoutEffect(() => {
 		if (isOpen) {
 			document.body.classList.add("overflow-y-hidden");
 		} else {

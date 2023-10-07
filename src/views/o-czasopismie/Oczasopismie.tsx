@@ -24,7 +24,7 @@ export const Oczasopismie = () => {
 				</span>
 			</div> */}
 			<div className="container mx-auto responsive-padding grid grid-cols-1 lg:grid-cols-2 pt-10 lg:gap-8">
-				<div className="lg:col-start-1 lg:col-end-2 lg:pt-24 h-full">
+				<div className="lg:col-start-1 lg:col-end-2 lg:pt-24 h-full relative about-abstract-shape">
 					<h1 className="text-4xl font-bold lg:text-5xl xl:text-7xl ">
 						<p>Poznaj nasze </p>
 						<p>czasopismo </p>
@@ -39,7 +39,7 @@ export const Oczasopismie = () => {
 					/>
 				</div>
 			</div>
-			<div className="bg-primary">
+			<div className="bg-primary z-10">
 				<div className="container mx-auto responsive-padding grid grid-cols-1 lg:grid-cols-2 py-16 gap-8">
 					<div className="lg:col-start-1 lg:col-end-2 relative z-10">
 						<span className="bg-shape-white" />

@@ -3,6 +3,7 @@ import '../globals.css';
 import BaseSEO from '@layouts/components/BaseSEO.astro';
 import Navbar from '@layouts/components/navbar/Navbar'
 import Footer from '@layouts/components/footer/Footer'
+import Cookies from '@shared/cookies/Cookies'
 
 
 interface Props {
@@ -30,6 +31,7 @@ const { title, description } = Astro.props;
 		<div class="min-h-screen">
 			<Navbar client:load/>
 			<div class="pt-[96px]"><slot /></div>
+			<Cookies client:load/>
 			<Footer client:load/>
 		</div>
 	</body>

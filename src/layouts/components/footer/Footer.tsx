@@ -88,7 +88,7 @@ const Footer = () => {
 						<a className=" lg:border-r-2 lg:pr-2" href="/">
 							Regulamin i RODO
 						</a>
-						<a href="/">Polityka prywatności i cookies</a>
+						<a href="/cookies">Polityka prywatności i cookies</a>
 					</div>
 				</div>
 			</div>

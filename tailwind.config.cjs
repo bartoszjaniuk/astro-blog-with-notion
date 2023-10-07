@@ -14,6 +14,8 @@ module.exports = {
 				contactBg: "url('/images/contact-bg.png')",
 				contactBlury: "url('/images/ffflurry.svg')",
 				ooorganize: "url('/images/ooorganize.svg')",
+				contactShape: "url('/images/contact/contactShape.svg')",
+				aboutShape: "url('/images/about/abstractShape.svg')",
 			},
 			fontFamily: {
 				text: ["Varela Round", "sans-serif"],
