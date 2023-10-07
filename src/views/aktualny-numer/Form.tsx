@@ -11,6 +11,14 @@ type FormProps = {
 	toggleModal: VoidFunction;
 };
 
+const sendEmail = async (formData: AktualnyNumerForm) => {
+	await fetch("/api/access", {
+		method: "POST",
+		headers: { "Content-Type": "application/json" },
+		body: JSON.stringify(formData),
+	});
+};
+
 export const Form = ({ toggleModal }: FormProps) => {
 	const {
 		reset,
@@ -23,10 +31,16 @@ export const Form = ({ toggleModal }: FormProps) => {
 
 	const onSubmit = async (formData: AktualnyNumerForm) => {
 		if (isValid) {
-			storage.setItem(StorageKeys.VERIFY_USER, true);
-			toggleModal();
-			const url = window.location.href;
-			location.assign(`${url}/aktualny-numer`);
+			try {
+				// await sendEmail(formData);
+				await sendEmail(formData);
+				storage.setItem(StorageKeys.VERIFY_USER, true);
+				toggleModal();
+				const url = window.location.href;
+				location.assign(`${url}/aktualny-numer`);
+			} catch (error) {
+				console.log(error);
+			}
 		}
 	};
 
