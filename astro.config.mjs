@@ -8,8 +8,5 @@ export default defineConfig({
 	site: "http://localhost:4321/",
 	integrations: [react(), tailwind()],
 	output: "server",
-	adapter: adapter({
-		edge: false,
-		split: false,
-	}),
+	adapter: netlify(),
 });
