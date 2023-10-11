@@ -87,11 +87,12 @@ export const Oczasopismie = () => {
 					</p>
 				</div>
 
-				<div className="container mx-auto responsive-padding flex flex-col gap-8 py-8">
+				<div className="container mx-auto responsive-padding flex flex-col gap-8 py-8 overflow-hidden">
 					{list.map((field, index) => {
 						if (index % 2 == 0) {
 							return (
 								<Card
+									isLeft
 									key={index}
 									text={field.text}
 									imagePath={field.imagePath}

@@ -1,18 +1,26 @@
 import { MENU_LINKS } from "@layouts/consts/menuLinks";
 import ResponsiveLinksWithHamburger from "../responsiveLinksWithHamburger/ResponsiveLinksWithHamburger";
 import { Modal } from "src/shared/modal/Modal";
-import React from "react";
+import React, { useState } from "react";
 import { Form } from "@views/aktualny-numer/Form";
 import { StorageKeys } from "src/utils/storage/enums/storageKeys.enum";
+import { Newsletter } from "@shared/newsletter/Newsletter";
+import { NewsletterForm } from "@shared/newsletter/components/newsletterForm/NewsletterForm";
+import reklamaPdf from "/assets/reklama-wytyczne.pdf";
 
 const Navbar = () => {
 	const [isModalVisible, setModalVisible] = React.useState(false);
 	const toggleModal = () => setModalVisible((prev) => !prev);
+
+	const [isNewsletterVisible, setIsNewsletterVisible] = useState(false);
+	const toggleNewsletter = () => setIsNewsletterVisible((prev) => !prev);
+
 	const handleRedirectToActualMagazinePage = () => {
 		if (!localStorage.getItem(StorageKeys.VERIFY_USER)) return toggleModal();
 		const url = window.location.href;
 		location.assign(`${url}/aktualny-numer`);
 	};
+
 	return (
 		<>
 			<div className="bg-white w-full fixed z-50">
@@ -21,7 +29,7 @@ const Navbar = () => {
 						Czasopismo Stomatologiczne
 					</div>
 					<ResponsiveLinksWithHamburger
-						toggleModal={toggleModal}
+						toggleNewsletter={toggleNewsletter}
 						handleRedirectToActualMagazinePage={
 							handleRedirectToActualMagazinePage
 						}
@@ -34,7 +42,22 @@ const Navbar = () => {
 										className="text-primary font-semibold md:text-base"
 										key={index}
 										href={link.path}
-										onClick={(e) => e.preventDefault()}
+										onClick={(e) => {
+											e.preventDefault();
+											toggleNewsletter();
+										}}
+									>
+										{link.title}
+									</a>
+								);
+							}
+							if (link.title === "Reklama") {
+								return (
+									<a
+										className="relative text-xl md:text-base w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-primary after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-500 after:origin-center whitespace-nowrap	"
+										key={index}
+										href={reklamaPdf}
+										target="_blank"
 									>
 										{link.title}
 									</a>
@@ -76,6 +99,12 @@ const Navbar = () => {
 			>
 				<Form toggleModal={toggleModal} />
 			</Modal>
+			<Newsletter
+				isNewsletterVisible={isNewsletterVisible}
+				toggleNewsletter={toggleNewsletter}
+			>
+				<NewsletterForm toggleNewsletter={toggleNewsletter} />
+			</Newsletter>
 		</>
 	);
 };

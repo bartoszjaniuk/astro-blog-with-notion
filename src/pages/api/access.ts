@@ -30,21 +30,3 @@ export const POST: APIRoute = async ({ request }) => {
 	}
 	return new Response(null, { status: 400 });
 };
-
-// export const POST: APIRoute = async ({ request }) => {
-// 	const formData = await request.json();
-// 	console.log({ formData });
-// 	return new Response(
-// 		JSON.stringify({
-// 			message: "This was a POST!",
-// 		}),
-// 	);
-// };
-
-export const GET: APIRoute = ({ params, request }) => {
-	return new Response(
-		JSON.stringify({
-			message: "This was a GET!",
-		}),
-	);
-};

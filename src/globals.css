@@ -63,11 +63,20 @@ a {
 	}
 
 	.bg-before {
-		@apply bg-contactShape absolute bottom-[40%] left-[100%] w-full lg:w-screen h-[60%] after:content-[''] -z-[1] bg-no-repeat;
+		@apply bg-contactShape absolute bottom-[40%] left-[100%] w-screen lg:w-full  h-[60%] after:content-[''] -z-[1] bg-no-repeat;
 	}
 
 	.video-bg {
 		@apply absolute top-0 left-0 h-full w-full z-[-1] opacity-[0.15] overflow-hidden;
+	}
+
+	.vertical-carousel {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-size: 36px;
+		font-weight: bold;
+		overflow: hidden;
 	}
 
 	.video-content {

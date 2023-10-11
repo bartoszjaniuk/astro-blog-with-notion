@@ -1,6 +1,6 @@
 import { ErrorMessage } from "@hookform/error-message";
 import type { InputProps } from "../input/Input";
-import type { AktualnyNumerForm } from "../input/types/AktualnyNumerForm";
+import type { AktualnyNumerForm } from "../input/types/AktualnyNumerForm.types";
 import { FormErrorMessage } from "../errorMessage/ErrorMessage";
 
 type CheckboxProps = {};
@@ -22,26 +22,37 @@ export const Checkbox = ({
 
 	return (
 		<div className="pb-4">
-			<div className="mb-3 mt-4 w-full flex items-center gap-3">
-				<input
-					id={id}
-					name={name}
-					type="checkbox"
-					aria-label={label}
-					aria-invalid={hasError}
-					placeholder={placeholder}
-					className="w-5 h-5 accent-primary  bg-gray-100 border-gray-300 rounded focus:ring-primary focus:ring-2"
-					{...props}
-					{...(register && register(name, rules))}
-				/>
+			<div className="mb-3 mt-4 w-full flex items-start gap-3">
+				<div>
+					<input
+						id={id}
+						name={name}
+						type="checkbox"
+						aria-label={label}
+						aria-invalid={hasError}
+						placeholder={placeholder}
+						className="w-5 h-5 accent-primary  bg-gray-100 border-gray-300 rounded focus:ring-primary focus:ring-2"
+						{...props}
+						{...(register && register(name, rules))}
+					/>
+				</div>
 
-				<label htmlFor={id} className="block text-sm font-medium ">
-					Zapoznałem się{" "}
-					<a href="/" target="_blank" className="text-primary underline">
-						Regulaminem Serwisu
-					</a>{" "}
-					i akceptuję jego treść.
-				</label>
+				{id === "zgoda" ? (
+					<label className="block text-sm font-medium" htmlFor={id}>
+						Wyrażam zgodę na otrzymywanie informacji handlowych drogą
+						elektroniczną na podany przeze mnie adres e-mail, zgodnie z ustawą z
+						dnia 18 lipca 2002 r. o świadczeniu usług drogą elektroniczną (Dz.
+						U. nr 144, poz. 1204, z późn. zm.
+					</label>
+				) : (
+					<label htmlFor={id} className="block text-sm font-medium">
+						Zapoznałem się{" "}
+						<a href="/" target="_blank" className="text-primary underline">
+							Regulaminem Serwisu
+						</a>{" "}
+						i akceptuję jego treść.
+					</label>
+				)}
 			</div>
 			<ErrorMessage
 				errors={errors}

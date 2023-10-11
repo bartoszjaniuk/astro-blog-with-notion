@@ -3,7 +3,7 @@ import { Checkbox } from "src/shared/checkbox/Checkbox";
 import { Input } from "src/shared/input/Input";
 import { emailPattern } from "src/shared/input/consts/emailPattern";
 import { phoneNumberPattern } from "src/shared/input/consts/phoneNumberPattern";
-import type { AktualnyNumerForm } from "src/shared/input/types/AktualnyNumerForm";
+import type { AktualnyNumerForm } from "@shared/input/types/AktualnyNumerForm.types";
 import { StorageKeys } from "src/utils/storage/enums/storageKeys.enum";
 import { storage } from "src/utils/storage/storage";
 
@@ -71,7 +71,7 @@ export const Form = ({ toggleModal }: FormProps) => {
 					type="text"
 					name="imie"
 					label="Imie*"
-					placeholder="Podaj imie"
+					placeholder="Podaj imię"
 					register={register}
 					rules={{
 						required: "To pole jest wymagane.",

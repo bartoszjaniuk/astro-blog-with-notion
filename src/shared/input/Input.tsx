@@ -4,7 +4,7 @@ import {
 	type ReactNode,
 } from "react";
 import type { DeepMap, FieldError, RegisterOptions } from "react-hook-form";
-import type { AktualnyNumerForm } from "./types/AktualnyNumerForm";
+import type { AktualnyNumerForm } from "./types/AktualnyNumerForm.types";
 import { ErrorMessage } from "@hookform/error-message";
 import { FormErrorMessage } from "../errorMessage/ErrorMessage";
 

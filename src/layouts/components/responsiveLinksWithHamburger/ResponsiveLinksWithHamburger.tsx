@@ -1,13 +1,14 @@
-import { MENU_LINKS } from "@layouts/consts/menuLinks";
 import * as React from "react";
+import { MENU_LINKS } from "@layouts/consts/menuLinks";
+import reklamaPdf from "/assets/reklama-wytyczne.pdf";
 
 type ResponsiveLinksWithHamburgerProps = {
-	toggleModal: VoidFunction;
+	toggleNewsletter: VoidFunction;
 	handleRedirectToActualMagazinePage: VoidFunction;
 };
 
 const ResponsiveLinksWithHamburger = ({
-	toggleModal,
+	toggleNewsletter,
 	handleRedirectToActualMagazinePage,
 }: ResponsiveLinksWithHamburgerProps) => {
 	const [isOpen, setIsOpen] = React.useState(false);
@@ -39,7 +40,10 @@ const ResponsiveLinksWithHamburger = ({
 								className="text-primary font-semibold "
 								key={index}
 								href={link.path}
-								onClick={(e) => e.preventDefault()}
+								onClick={(e) => {
+									e.preventDefault();
+									toggleNewsletter();
+								}}
 							>
 								{link.title}
 							</a>
@@ -56,6 +60,19 @@ const ResponsiveLinksWithHamburger = ({
 									handleRedirectToActualMagazinePage();
 									setIsOpen(false);
 								}}
+							>
+								{link.title}
+							</a>
+						);
+					}
+
+					if (link.title === "Reklama") {
+						return (
+							<a
+								className="relative w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-primary after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-500 after:origin-center"
+								key={index}
+								href={reklamaPdf}
+								target="_blank"
 							>
 								{link.title}
 							</a>
