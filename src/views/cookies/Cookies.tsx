@@ -1,8 +1,6 @@
-import React from "react";
-
 export const Cookies = () => {
 	return (
-		<main className="container mx-auto responsive-padding py-8 h-full lg:h-screen">
+		<main className="container mx-auto responsive-padding py-8 h-full">
 			<h1 className="py-4 lg:py-8 text-5xl lg:text-6xl text-primary font-extralight">
 				Polityka Cookies
 			</h1>

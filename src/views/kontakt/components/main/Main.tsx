@@ -2,6 +2,7 @@ import { CONTACT_DATA } from "@views/kontakt/consts/data.consts";
 import { Employee } from "../employee/Employee";
 import { Icon } from "@iconify/react/dist/iconify.js";
 import { ICON_SIZE } from "@layouts/consts/iconSize";
+import { motion } from "framer-motion";
 
 export const Main = () => {
 	return (
@@ -59,7 +60,11 @@ export const Main = () => {
 					</div>
 
 					<div className="lg:col-start-2 lg:col-end-3 w-full relative z-20 flex flex-col ">
-						<div className="hidden lg:block bg-before"></div>
+						<motion.div
+							animate={{ rotate: 360 }}
+							transition={{ ease: "linear", duration: 200, repeat: Infinity }}
+							className="hidden lg:block bg-before"
+						></motion.div>
 
 						<img
 							className="rounded-md"

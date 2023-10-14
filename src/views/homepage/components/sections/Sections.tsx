@@ -46,8 +46,9 @@ export const Sections = () => {
 					</div>
 				</motion.div>
 				<motion.div
+					onClick={() => redirectTo("wydarzenia-branzowe")}
 					variants={cardVariants}
-					className="h-[200px] lg:h-[350px] shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px] p-4 relative"
+					className="cursor-pointer h-[200px] lg:h-[350px] shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px] p-4 relative"
 				>
 					<span className="card-background" />
 					<div className="flex-col justify-center items-center  flex card-effect">

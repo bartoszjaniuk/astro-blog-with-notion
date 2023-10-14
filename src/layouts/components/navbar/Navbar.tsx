@@ -23,7 +23,7 @@ const Navbar = () => {
 
 	return (
 		<>
-			<div className="bg-white w-full fixed z-50">
+			<div className="bg-white w-full fixed z-50 border">
 				<nav className="container responsive-padding mx-auto  h-24  flex items-center justify-around">
 					<div className="logo text-primary font-headings font-bold w-full">
 						Czasopismo Stomatologiczne

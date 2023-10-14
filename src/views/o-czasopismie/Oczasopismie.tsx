@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { Card } from "./components/card/Card";
 
 export const Oczasopismie = () => {
@@ -43,7 +44,7 @@ export const Oczasopismie = () => {
 				<div className="container mx-auto responsive-padding grid grid-cols-1 lg:grid-cols-2 py-16 gap-8">
 					<div className="lg:col-start-1 lg:col-end-2 relative z-10">
 						<span className="bg-shape-white" />
-						<img
+						<motion.img
 							className="rounded-lg"
 							src="/images/gabinet.jpg"
 							alt="gabinet stomatologiczny"

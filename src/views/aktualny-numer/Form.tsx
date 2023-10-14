@@ -138,7 +138,7 @@ export const Form = ({ toggleModal }: FormProps) => {
 					Zamknij
 				</button>
 				<button
-					className="bg-primary text-white active:bg-emerald-600 w-full lg:w-auto  uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 disabled:bg-gray-300 disabled:cursor-not-allowed"
+					className="bg-primary text-white active:bg-thirdnary w-full lg:w-auto  uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 disabled:bg-gray-300 disabled:cursor-not-allowed"
 					type="button"
 					onClick={handleSubmit(onSubmit)}
 					disabled={!isValid}

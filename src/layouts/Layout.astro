@@ -4,6 +4,7 @@ import BaseSEO from '@layouts/components/BaseSEO.astro';
 import Navbar from '@layouts/components/navbar/Navbar'
 import Footer from '@layouts/components/footer/Footer'
 import Cookies from '@shared/cookies/Cookies'
+import GuardModal from '@views/homepage/components/guardModal/GuardModal';
 
 
 interface Props {
@@ -29,8 +30,9 @@ const { title, description } = Astro.props;
 	</head>
 	<body>
 		<div class="min-h-screen">
+			<GuardModal client:load/>
 			<Navbar client:load/>
-			<div class="pt-[96px] h-full"><slot /></div>
+			<div class="pt-[96px] min-h-screen h-full"><slot /></div>
 			<Cookies client:load/>
 			<Footer client:load/>
 		</div>
