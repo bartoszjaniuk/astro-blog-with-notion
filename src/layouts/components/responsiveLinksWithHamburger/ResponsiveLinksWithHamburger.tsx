@@ -1,7 +1,7 @@
 import * as React from "react";
 import { MENU_LINKS } from "@layouts/consts/menuLinks";
 import reklamaPdf from "/assets/reklama-wytyczne.pdf";
-import { AnimatePresence, motion, type Variants } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 
 type ResponsiveLinksWithHamburgerProps = {
 	toggleNewsletter: VoidFunction;
@@ -14,7 +14,7 @@ const ResponsiveLinksWithHamburger = ({
 }: ResponsiveLinksWithHamburgerProps) => {
 	const [isOpen, setIsOpen] = React.useState(false);
 	const toggleButton = () => setIsOpen((prev) => !prev);
-	React.useLayoutEffect(() => {
+	React.useEffect(() => {
 		if (isOpen) {
 			document.body.classList.add("overflow-y-hidden");
 		} else {

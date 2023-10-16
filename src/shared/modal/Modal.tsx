@@ -14,7 +14,7 @@ export const Modal = ({
 	title,
 	children,
 }: React.PropsWithChildren<ModalProps>) => {
-	React.useLayoutEffect(() => {
+	React.useEffect(() => {
 		if (isModalVisible) {
 			document.body.classList.add("overflow-y-hidden");
 		} else {

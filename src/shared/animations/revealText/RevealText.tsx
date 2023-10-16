@@ -18,7 +18,7 @@ export const RevealText = ({ placeholderText }: RevealTextProps) => {
 
 	return (
 		<motion.div initial="hidden" animate="visible" variants={variants}>
-			<div className="container leading-[1]">
+			<div className="container leading-[1] flex flex-wrap">
 				{placeholderText.map((item, index) => {
 					return <AnimatedText text={item.text} key={index} />;
 				})}

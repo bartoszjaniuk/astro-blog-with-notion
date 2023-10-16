@@ -20,14 +20,14 @@ export const Hero = () => {
 					<h1 className="hidden select-none text-transparent">
 						Czasopismo Stomatologiczne
 					</h1>
-					<h1 className="text-4xl font-bold lg:text-5xl xl:text-6xl text-start">
+					<h1 className="text-2xl font-bold lg:text-5xl xl:text-6xl text-start w-full">
 						<RevealText
 							placeholderText={[{ text: "Czasopismo Stomatologiczne" }]}
 						/>
 					</h1>
 
 					<div className="w-full lg:w-[450px]">
-						<div className="flex items-center  gap-1">
+						<div className="flex items-center gap-1 ">
 							<p className="text-lg lg:text-xl">Strona przeznaczona</p>
 							<div className="relative flex text-lg lg:text-xl">
 								dla
@@ -42,7 +42,7 @@ export const Hero = () => {
 							wyrobach oraz materiałach, a także o tym czym kierować się przy
 							ich wyborze.
 						</p>
-						<p className="text-lg lg:text-xl text-start">
+						<div className="text-lg lg:text-xl text-start">
 							<RevealText
 								placeholderText={[
 									{
@@ -56,7 +56,7 @@ export const Hero = () => {
 									},
 								]}
 							/>
-						</p>
+						</div>
 					</div>
 					<button className="bg-primary hover:bg-secondary text-white  py-2 rounded w-fit px-6 flex gap-2">
 						Sprawdź juz teraz

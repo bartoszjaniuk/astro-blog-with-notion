@@ -12,7 +12,7 @@ export const Newsletter = ({
 	toggleNewsletter,
 	children,
 }: React.PropsWithChildren<NewsletterProps>) => {
-	React.useLayoutEffect(() => {
+	React.useEffect(() => {
 		if (isNewsletterVisible) {
 			document.body.classList.add("overflow-y-hidden");
 		} else {
