@@ -26,7 +26,7 @@ export const Sections = () => {
 				whileInView="onscreen"
 				viewport={{ once: true, amount: 0.8 }}
 				id="cards-section"
-				className="container mx-auto h-full py-16 lg:h-[500px] items-center grid grid-cols-1 lg:grid-cols-4 gap-8 responsive-padding "
+				className="container mx-auto h-full my-16 lg:h-[500px] items-center grid grid-cols-1 lg:grid-cols-4 gap-8 responsive-padding "
 			>
 				<motion.div
 					variants={cardVariants}
