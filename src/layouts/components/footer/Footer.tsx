@@ -1,5 +1,6 @@
-import React from "react";
 import { Column, type ColumnProps } from "./components/column/Column";
+import regulamin from "/assets/regulamin.pdf";
+
 
 const FOOTER_ADDRESS: ColumnProps = {
 	heading: "Adres",
@@ -84,10 +85,14 @@ const Footer = () => {
 					<h5 className="text-xl sm:text-base 2xl:text-2xl font-light">
 						© 2022 Czasopismo Stomatologiczne
 					</h5>
-					<div className="flex flex-col lg:flex-row text-xl sm:text-base 2xl:text-2xl  font-light font-headings gap-2 h-full ">
-						<a className=" lg:border-r-2 lg:pr-2" href="/">
+					<div className="flex flex-col lg:flex-row text-xl sm:text-base 2xl:text-2xl  font-light font-headings gap-2 h-full hover:cursor-pointer ">
+						<a className=" lg:border-r-2 lg:pr-2" 		href={regulamin}
+										target="_blank">
 							Regulamin i RODO
 						</a>
+
+					
+				
 						<a href="/cookies">Polityka prywatności i cookies</a>
 					</div>
 				</div>
