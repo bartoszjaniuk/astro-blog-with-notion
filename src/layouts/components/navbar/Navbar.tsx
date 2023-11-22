@@ -26,7 +26,11 @@ const Navbar = () => {
 			<div className="bg-white w-full fixed z-50 border">
 				<nav className="container responsive-padding mx-auto  h-24  flex items-center justify-around">
 					<a href="/">
-					<img src="/assets/logo.png" className="w-52 mr-4" alt="Sprzęt Stomatologiczny Logo"/>
+						<img
+							src="/assets/logo.png"
+							className="w-52 mr-4"
+							alt="Sprzęt Stomatologiczny Logo"
+						/>
 					</a>
 					<ResponsiveLinksWithHamburger
 						toggleNewsletter={toggleNewsletter}

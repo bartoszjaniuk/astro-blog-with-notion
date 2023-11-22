@@ -17,14 +17,16 @@ export const Hero = () => {
 				className="grid grid-cols-1 lg:grid-cols-5 text-center lg:text-left pb-16 responsive-padding gap-4 lg:gap-0 "
 			>
 				<div className="lg:col-start-1 lg:col-end-3 flex flex-col gap-8 items-start">
-					<h1 className="hidden select-none text-transparent">
-						Czasopismo Stomatologiczne
-					</h1>
-					<h1 className="text-2xl font-bold lg:text-5xl xl:text-6xl text-start w-full">
-						<RevealText
-							placeholderText={[{ text: "Czasopismo Stomatologiczne" }]}
+					<div className="relative">
+						<img
+							src="/assets/logo-2.png"
+							className="w-full"
+							alt="Sprzęt Stomatologiczny Logo"
 						/>
-					</h1>
+						<div className="absolute bottom-[-1.3rem] left-0 uppercase font-headings text-lg">
+							Czasopismo Stomatologiczne
+						</div>
+					</div>
 
 					<div className="w-full lg:w-[450px]">
 						<div className="flex items-center gap-1 ">
@@ -40,7 +42,7 @@ export const Hero = () => {
 						<p className="hidden select-none text-transparent">
 							poszukujących ofert i informacji o sprzęcie stomatologicznym,
 							wyrobach oraz materiałach, a także o tym czym kierować się przy
-							ich wyborze.
+							ich wyborze. Czytaj najnowszy numer już w pierwszym kwartale 2024.
 						</p>
 						<div className="text-lg lg:text-xl text-start">
 							<RevealText
@@ -58,13 +60,20 @@ export const Hero = () => {
 							/>
 						</div>
 					</div>
-					<button className="bg-primary hover:bg-secondary text-white  py-2 rounded w-fit px-6 flex gap-2">
-						Sprawdź juz teraz
-						<Icon
-							width={20}
-							icon="mdi:arrow-right"
-							className="text-white text-center h-full"
-						/>
+
+					<button className=" group w-full md:w-fit transition-all duration-300 ease-in-out border-2 border-primary  text-primary hover:bg-primary hover:text-white rounded flex py-3 px-5 text-start ">
+						<div className="text-2xl  md:text-2xl md:text-start font-text font-medium tracking-wide">
+							<p className="font-semibold">Czytaj najnowszy numer</p>
+							<p className="font-semibold">już w pierwszym kwartale</p>
+							<div className="flex items-center gap-2 ">
+								<span className="font-semibold">2024</span>
+								<Icon
+									width={30}
+									icon="mdi:arrow-right"
+									className="text-primary transition-all duration-300 ease-in-out text-center h-full group-hover:text-white group-hover:rotate-180"
+								/>
+							</div>
+						</div>
 					</button>
 				</div>
 				<div className="lg:col-start-3 lg:col-end-6 relative flex justify-start lg:justify-end">

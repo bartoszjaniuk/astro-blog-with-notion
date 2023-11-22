@@ -48,7 +48,6 @@ export const Oczasopismie = () => {
 							className="rounded-lg h-full"
 							src="/images/gabinet.jpg"
 							alt="gabinet stomatologiczny"
-
 						/>
 					</div>
 					<div className="lg:col-start-2 lg:col-end-3 h-full">
@@ -143,10 +142,10 @@ const magazineList = [
 ];
 
 const list = [
-	{
-		imagePath: "/images/about/share.svg",
-		text: "Czasopismo promowane będzie na imprezach branżowych w kraju, zarówno w formie elektronicznej jak i drukowanej.",
-	},
+	// {
+	// 	imagePath: "/images/about/share.svg",
+	// 	text: "Czasopismo promowane będzie na imprezach branżowych w kraju, zarówno w formie elektronicznej jak i drukowanej.",
+	// },
 	{
 		imagePath: "/images/about/world.svg",
 		text: "Pierwsze wydanie otrzymają uczestnicy 30. Międzynarodowych Targów Dentystycznych „Krakdent” w Krakowie w kwietniu 2024 roku.",
@@ -167,8 +166,8 @@ const list = [
 		imagePath: "/images/about/conversation.svg",
 		text: "Czasopismo wydawane będzie głównie w formie elektronicznej, a przy okazji wydarzeń branżowych planowany jest także nakład drukowany.",
 	},
-	{
-		imagePath: "/images/about/reminder.svg",
-		text: "Uruchomiona już jest strona internetowa www.e-stomatolog.pl, na której zamieszczane będą elektroniczne wydania czasopisma oraz informacje prasowe.",
-	},
+	// {
+	// 	imagePath: "/images/about/reminder.svg",
+	// 	text: "Uruchomiona już jest strona internetowa www.e-stomatolog.pl, na której zamieszczane będą elektroniczne wydania czasopisma oraz informacje prasowe.",
+	// },
 ];
