@@ -11,8 +11,9 @@ export const VerticalCarousel = ({ words }: { words: string[] }) => {
 			);
 		}, 2000);
 
+		// Clear interval on unmount
 		return () => clearInterval(interval);
-	}, [words]);
+	}, [words, setCurrentWordIndex]);
 
 	return (
 		<AnimatePresence initial={false}>

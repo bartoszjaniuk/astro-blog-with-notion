@@ -24,7 +24,7 @@ const Navbar = () => {
 	return (
 		<>
 			<div className="bg-white w-full fixed z-50 border">
-				<nav className="container responsive-padding mx-auto  h-24  flex items-center justify-around">
+				<nav className="container responsive-padding mx-auto  h-24  flex items-center justify-between">
 					<a href="/">
 						<img
 							src="/assets/logo.png"

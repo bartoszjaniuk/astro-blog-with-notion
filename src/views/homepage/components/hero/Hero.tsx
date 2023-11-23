@@ -2,19 +2,14 @@ import { Icon } from "@iconify/react";
 import { VerticalCarousel } from "../verticalCarousel/VerticalCarousel";
 import { RevealText } from "@shared/animations/revealText/RevealText";
 
-const words = [
-	"specjalistów",
-	"stomatologów",
-	"producentów",
-	"profesjonalistów",
-];
+const words = ["specjalistów", "stomatologów", "producentów"];
 
 export const Hero = () => {
 	return (
 		<main className="container pt-14 mx-auto">
 			<div
 				id="section"
-				className="grid grid-cols-1 lg:grid-cols-5 text-center lg:text-left pb-16 responsive-padding gap-4 lg:gap-0 "
+				className="grid grid-cols-1 lg:grid-cols-5 text-center lg:text-left pb-16 responsive-padding gap-4 lg:gap-4"
 			>
 				<div className="lg:col-start-1 lg:col-end-3 flex flex-col gap-8 items-start">
 					<div className="relative">
@@ -28,7 +23,7 @@ export const Hero = () => {
 						</div>
 					</div>
 
-					<div className="w-full lg:w-[450px]">
+					<div className="w-full lg:w-[400px]">
 						<div className="flex items-center gap-1 ">
 							<p className="text-lg lg:text-xl">Strona przeznaczona</p>
 							<div className="relative flex text-lg lg:text-xl">
@@ -61,8 +56,8 @@ export const Hero = () => {
 						</div>
 					</div>
 
-					<button className=" group w-full md:w-fit transition-all duration-300 ease-in-out border-2 border-primary  text-primary hover:bg-primary hover:text-white rounded flex py-3 px-5 text-start ">
-						<div className="text-2xl  md:text-2xl md:text-start font-text font-medium tracking-wide">
+					<button className="group w-full md:w-fit transition-all duration-300 ease-in-out border-2 border-primary  text-primary hover:bg-primary hover:text-white rounded flex py-3 px-5 text-start ">
+						<div className="text-2xl md:text-2xl md:text-start font-text font-medium tracking-wide">
 							<p className="font-semibold">Czytaj najnowszy numer</p>
 							<p className="font-semibold">już w pierwszym kwartale</p>
 							<div className="flex items-center gap-2 ">
