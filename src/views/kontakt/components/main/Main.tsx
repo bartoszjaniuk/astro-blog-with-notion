@@ -31,9 +31,9 @@ export const Main = () => {
 									<Icon icon="mdi:email-outline" width={ICON_SIZE} />
 									<a
 										className="underline text-md 2xl:text-2xl text-thirdnary"
-										href="mailto:redakcja@sprzetstomatologiczny.pl"
+										href="mailto:redakcja@e-sprzetstomatologiczny.pl"
 									>
-										redakcja@sprzetstomatologiczny.pl
+										redakcja@e-sprzetstomatologiczny.pl
 									</a>
 								</div>
 							</div>

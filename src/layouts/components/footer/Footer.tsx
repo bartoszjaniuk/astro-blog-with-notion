@@ -1,7 +1,6 @@
 import { Column, type ColumnProps } from "./components/column/Column";
 import regulamin from "/assets/regulamin.pdf";
 
-
 const FOOTER_ADDRESS: ColumnProps = {
 	heading: "Adres",
 	gridColumn: "1/2",
@@ -33,7 +32,7 @@ const FOOTER_CONTACT: ColumnProps = {
 		{
 			type: "contact",
 			icon: "mail",
-			content: "redakcja@sprzetstomatologiczny.pl",
+			content: "redakcja@e-sprzetstomatologiczny.pl",
 		},
 		{
 			type: "contact",
@@ -43,7 +42,7 @@ const FOOTER_CONTACT: ColumnProps = {
 		{
 			type: "contact",
 			icon: "mail",
-			content: "katarzynamazur@sprzetstomatologiczny.pl",
+			content: "katarzynamazur@e-sprzetstomatologiczny.pl",
 		},
 	],
 };
@@ -86,13 +85,14 @@ const Footer = () => {
 						© 2022 Czasopismo Stomatologiczne
 					</h5>
 					<div className="flex flex-col lg:flex-row text-xl sm:text-base 2xl:text-2xl  font-light font-headings gap-2 h-full hover:cursor-pointer ">
-						<a className=" lg:border-r-2 lg:pr-2" 		href={regulamin}
-										target="_blank">
+						<a
+							className=" lg:border-r-2 lg:pr-2"
+							href={regulamin}
+							target="_blank"
+						>
 							Regulamin i RODO
 						</a>
 
-					
-				
 						<a href="/cookies">Polityka prywatności i cookies</a>
 					</div>
 				</div>

@@ -6,7 +6,7 @@ import { Form } from "@views/aktualny-numer/Form";
 import { StorageKeys } from "src/utils/storage/enums/storageKeys.enum";
 import { Newsletter } from "@shared/newsletter/Newsletter";
 import { NewsletterForm } from "@shared/newsletter/components/newsletterForm/NewsletterForm";
-import reklamaPdf from "/assets/reklama-wytyczne.pdf";
+import reklamaPdf from "/assets/reklama.pdf";
 
 const Navbar = () => {
 	const [isModalVisible, setModalVisible] = React.useState(false);
@@ -23,7 +23,7 @@ const Navbar = () => {
 
 	return (
 		<>
-			<div className="bg-white w-full fixed z-50 border">
+			<div className="bg-white w-full fixed z-50 ">
 				<nav className="container responsive-padding mx-auto  h-24  flex items-center justify-between">
 					<a href="/">
 						<img
@@ -95,6 +95,7 @@ const Navbar = () => {
 						})}
 					</div>
 				</nav>
+				<span className="w-full bg-primary h-4 block" />
 			</div>
 			<Modal
 				isModalVisible={isModalVisible}

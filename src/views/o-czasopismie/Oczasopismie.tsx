@@ -4,33 +4,24 @@ import { Card } from "./components/card/Card";
 export const Oczasopismie = () => {
 	return (
 		<>
-			{/* <div className="h-[500px] lg:h-[600px] 2xl-h-[900px] w-full relative container mx-auto flex pt-16 responsive-padding">
-				<h1 className="text-4xl font-bold lg:text-5xl xl:text-6xl ">
-					Poznaj nasze <br /> czasopismo <br /> stomatologiczne
-				</h1>
-				<span className="clipped-bg responsive-padding text-white flex items-center text-2xl font-headings rounded-lg">
-					<div className="primary-selection">
-						<p className="font-semibold text-4xl py-2">
-							Sprzęt Stomatologiczny
-						</p>
-						to kwartalnik techniczno-informacyjny, który skierowany będzie do
-						profesjonalistów zawodowo związanych z branżą stomatologiczną, kadry
-						zarządzającej w klinikach i gabinetach. Periodyk przeznaczony będzie
-						dla lekarzy stomatologów prowadzących zarówno gabinety, jak i
-						kliniki stomatologiczne oraz właścicieli pracowni rentgenowskich,
-						dla protetyków, a także do higienistek i asystentek dentystycznych,
-						jak również do wszystkich zainteresowanych szeroką tematyką
-						stomatologiczną.
-					</div>
-				</span>
-			</div> */}
-			<div className="container mx-auto responsive-padding grid grid-cols-1 lg:grid-cols-2 pt-10 lg:gap-8">
-				<div className="lg:col-start-1 lg:col-end-2 lg:pt-24 h-full relative about-abstract-shape">
+			<div className="container mx-auto responsive-padding grid grid-cols-1 lg:grid-cols-2 pt-10 lg:pt-0 lg:gap-8">
+				<div className="lg:col-start-1 lg:col-end-2 lg:pt-24 h-full relative flex flex-col gap-8">
 					<h1 className="text-4xl font-bold lg:text-5xl xl:text-7xl ">
 						<p>Poznaj nasze </p>
 						<p>czasopismo </p>
 						<p className="text-primary">stomatologiczne</p>
 					</h1>
+
+					<p className="text-xl font-headings ">
+						„Sprzęt Stomatologiczny” to kwartalnik techniczno-informacyjny,
+						który skierowany będzie do profesjonalistów zawodowo związanych z
+						branżą stomatologiczną, kadry zarządzającej w klinikach i
+						gabinetach. Periodyk przeznaczony będzie dla lekarzy stomatologów
+						prowadzących zarówno gabinety, jak i kliniki stomatologiczne oraz
+						właścicieli pracowni rentgenowskich, dla protetyków, a także do
+						higienistek i asystentek dentystycznych, jak również do wszystkich
+						zainteresowanych szeroką tematyką stomatologiczną.
+					</p>
 				</div>
 				<div className="lg:col-start-2 lg:col-end-3 grid h-[700px]">
 					<img

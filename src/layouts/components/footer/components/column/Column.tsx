@@ -33,7 +33,7 @@ export const Column = ({ entries, heading, gridColumn }: ColumnProps) => {
 	const { start, end } = getColStartAndEnd(gridColumn);
 	return (
 		<div
-			className={`col-start-${start} col-end-${end} flex flex-col gap-2 w-full`}
+			className={`md:col-start-${start} md:col-end-${end} flex flex-col gap-2 w-full`}
 		>
 			<h5 className="text-xl sm:text-lg 2xl:text-2xl font-bold text-start pb-2">
 				{heading}
