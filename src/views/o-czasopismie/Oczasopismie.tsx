@@ -12,7 +12,7 @@ export const Oczasopismie = () => {
 						<p className="text-primary">stomatologiczne</p>
 					</h1>
 
-					<p className="text-xl font-headings ">
+					<p className="text-xl font-headings pb-10 lg:pb-0">
 						„Sprzęt Stomatologiczny” to kwartalnik techniczno-informacyjny,
 						który skierowany będzie do profesjonalistów zawodowo związanych z
 						branżą stomatologiczną, kadry zarządzającej w klinikach i
@@ -23,9 +23,9 @@ export const Oczasopismie = () => {
 						zainteresowanych szeroką tematyką stomatologiczną.
 					</p>
 				</div>
-				<div className="lg:col-start-2 lg:col-end-3 grid h-[700px]">
+				<div className="lg:col-start-2 lg:col-end-3 h-[700px] hidden lg:grid  items-end">
 					<img
-						className="h-[90%] animation-float"
+						className="w-[90%] animation-float"
 						src="/images/about/about_magazine.svg"
 						alt="about"
 					/>

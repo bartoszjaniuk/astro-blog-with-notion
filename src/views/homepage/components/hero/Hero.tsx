@@ -74,7 +74,7 @@ export const Hero = () => {
 				<div className="lg:col-start-3 lg:col-end-6 relative flex justify-start lg:justify-end">
 					<span className="bg-shape left-0 lg:left-[5%]" />
 					<img
-						className="w-[95%] relative border-fancy bg-black"
+						className="w-full lg:w-[95%] relative border-fancy bg-black"
 						src="/images/dentist-2.jpg"
 						alt="Lekarz oraz lekarka"
 					/>

@@ -11,12 +11,11 @@ export const VerticalCarousel = ({ words }: { words: string[] }) => {
 			);
 		}, 2000);
 
-		// Clear interval on unmount
 		return () => clearInterval(interval);
 	}, [words, setCurrentWordIndex]);
 
 	return (
-		<AnimatePresence initial={false}>
+		<AnimatePresence mode="wait" initial={false}>
 			<motion.p
 				className="absolute text-primary opacity-0 left-8 top-0 font-bold font-headings"
 				key={currentWordIndex}
