@@ -5,7 +5,7 @@ import { redirectTo } from "src/utils/redirect/redirect";
 export const Sections = () => {
 	const cardVariants: Variants = {
 		offscreen: {
-			y: 100,
+			y: 0,
 			rotate: -10,
 		},
 		onscreen: {
@@ -20,11 +20,11 @@ export const Sections = () => {
 	};
 
 	return (
-		<motion.section className="bg-softBg border min-h-full overflow-y-hidden">
+		<motion.section className="bg-softBg border min-h-screen overflow-y-hidden">
 			<motion.div
 				initial="offscreen"
 				whileInView="onscreen"
-				viewport={{ once: true, amount: 0.8 }}
+				viewport={{ once: true, amount: 0.3 }}
 				id="cards-section"
 				className="container mx-auto h-full my-16 lg:h-[500px] items-center grid grid-cols-1 lg:grid-cols-4 gap-8 responsive-padding "
 			>
