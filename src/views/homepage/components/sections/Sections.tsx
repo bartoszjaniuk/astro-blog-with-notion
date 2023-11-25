@@ -20,7 +20,7 @@ export const Sections = () => {
 	};
 
 	return (
-		<motion.section className="bg-softBg border h-full overflow-y-hidden">
+		<motion.section className="bg-softBg border min-h-full overflow-y-hidden">
 			<motion.div
 				initial="offscreen"
 				whileInView="onscreen"
