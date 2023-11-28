@@ -72,7 +72,7 @@ export const Column = ({ entries, heading, gridColumn }: ColumnProps) => {
 										<p className="text-sm sm:text-base 2xl:text-lg">Tel.</p>
 										<a
 											className="text-sm sm:text-base 2xl:text-lg"
-											href={`tel${entry.content}`}
+											href={`tel:${entry.content}`}
 										>
 											{entry.content}
 										</a>
@@ -83,7 +83,7 @@ export const Column = ({ entries, heading, gridColumn }: ColumnProps) => {
 										<p className="text-sm sm:text-base 2xl:text-lg">Mail:</p>
 										<a
 											className="text-sm sm:text-base 2xl:text-lg underline"
-											href={`tel${entry.content}`}
+											href={`mailto:${entry.content}`}
 										>
 											{entry.content}
 										</a>
