@@ -12,7 +12,7 @@ export const POST: APIRoute = async ({ request }) => {
 			port: 587,
 			auth: {
 				user: "janiukbartosz@gmail.com",
-				pass: BREVO_PASSWORD,
+				pass: "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",
 			},
 		});
 

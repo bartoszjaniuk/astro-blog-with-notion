@@ -31,9 +31,9 @@ export const Main = () => {
 									<Icon icon="mdi:email-outline" width={ICON_SIZE} />
 									<a
 										className="underline text-md 2xl:text-2xl text-thirdnary"
-										href="mailto:redakcja@e-sprzetstomatologiczny.pl"
+										href="mailto:faktury@e-sprzetstomatologiczny.pl"
 									>
-										redakcja@e-sprzetstomatologiczny.pl
+										faktury@e-sprzetstomatologiczny.pl
 									</a>
 								</div>
 							</div>
@@ -68,7 +68,7 @@ export const Main = () => {
 
 						<img
 							className="rounded-md"
-							src="/images/contact/contact-img.jpg"
+							src="/images/contact/contact.jpg"
 							alt="Lekarz oraz lekarka"
 							width={600}
 							height={600}

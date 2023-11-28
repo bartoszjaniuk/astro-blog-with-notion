@@ -23,8 +23,9 @@ export const MENU_LINKS = [
 		title: "Kontakt",
 		path: "/kontakt",
 	},
-	{
-		title: "Newsletter",
-		path: "",
-	},
+	// TODO: ENABLE WHEN CLIENT CONFIRM FEATURE
+	// {
+	// 	title: "Newsletter",
+	// 	path: "",
+	// },
 ];

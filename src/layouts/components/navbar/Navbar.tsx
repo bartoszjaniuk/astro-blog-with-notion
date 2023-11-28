@@ -68,21 +68,21 @@ const Navbar = () => {
 								);
 							}
 
-							if (link.title === "Aktualny numer") {
-								return (
-									<a
-										className="relative text-xl md:text-base w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-primary after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-500 after:origin-center whitespace-nowrap	"
-										key={index}
-										href="/"
-										onClick={(e) => {
-											e.preventDefault();
-											handleRedirectToActualMagazinePage();
-										}}
-									>
-										{link.title}
-									</a>
-								);
-							}
+							// if (link.title === "Aktualny numer") {
+							// 	return (
+							// 		<a
+							// 			className="relative text-xl md:text-base w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-primary after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-500 after:origin-center whitespace-nowrap	"
+							// 			key={index}
+							// 			href="/"
+							// 			onClick={(e) => {
+							// 				e.preventDefault();
+							// 				handleRedirectToActualMagazinePage();
+							// 			}}
+							// 		>
+							// 			{link.title}
+							// 		</a>
+							// 	);
+							// }
 							return (
 								<a
 									className="relative text-xl md:text-base w-fit block after:block after:content-[''] after:absolute after:h-[3px] after:bg-primary after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-500 after:origin-center whitespace-nowrap	"

@@ -16,7 +16,7 @@ export const Employee = ({ employee }: EmployeeProps) => {
 				<div className="flex gap-2 items-center">
 					<img
 						src={employee.imageURL}
-						className="bg-primary rounded-full w-[72px] h-[72px]"
+						className="bg-primary rounded-full w-[72px] h-[72px] object-contain"
 					/>
 					<p className="text-lg 2xl:text-2xl font-semibold">
 						{employee.fullName}

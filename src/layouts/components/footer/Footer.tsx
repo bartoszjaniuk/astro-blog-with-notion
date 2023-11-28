@@ -32,7 +32,7 @@ const FOOTER_CONTACT: ColumnProps = {
 		{
 			type: "contact",
 			icon: "mail",
-			content: "redakcja@e-sprzetstomatologiczny.pl",
+			content: "faktury@e-sprzetstomatologiczny.pl",
 		},
 		{
 			type: "contact",
