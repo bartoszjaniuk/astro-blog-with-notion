@@ -21,6 +21,13 @@ module.exports = {
 				text: ["Varela Round", "sans-serif"],
 				headings: ["Raleway", "sans-serif"],
 			},
+			gridTemplateRows: {
+				7: "repeat(7, minmax(0, 1fr))",
+				8: "repeat(8, minmax(0, 1fr))",
+			},
+			gridRowStart: {
+				8: "8",
+			},
 		},
 	},
 	plugins: [],

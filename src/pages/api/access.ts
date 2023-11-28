@@ -1,7 +1,7 @@
 import type { APIRoute } from "astro";
 import nodemailer from "nodemailer";
 import type Mail from "nodemailer/lib/mailer";
-import { BREVO_PASSWORD } from "src/consts/server-constants";
+import { BREVO_SMTP } from "src/consts/server-constants";
 
 export const POST: APIRoute = async ({ request }) => {
 	if (request.headers.get("Content-Type") === "application/json") {
@@ -12,7 +12,7 @@ export const POST: APIRoute = async ({ request }) => {
 			port: 587,
 			auth: {
 				user: "janiukbartosz@gmail.com",
-				pass: "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",
+				pass: BREVO_SMTP,
 			},
 		});
 
@@ -22,8 +22,7 @@ export const POST: APIRoute = async ({ request }) => {
 			subject: "Aktualny numer - dostęp",
 			text: JSON.stringify(formData),
 		};
-		const res = await transporter.sendMail(mailOptions);
-		console.log(res.response, "siu");
+		await transporter.sendMail(mailOptions);
 
 		return new Response(JSON.stringify(formData), {
 			status: 200,

@@ -4,7 +4,5 @@ export const DATABASE_ID =
 	import.meta.env.NOTION_DATABASE_ID || process.env.DATABASE_ID || "";
 export const MAILER_LITE_SECRET =
 	import.meta.env.MAILER_LITE_TOKEN || process.env.MAILER_LITE_TOKEN || "";
-
-export const BREVO_PASSWORD =
-	import.meta.env.BREVO_PASSWORD || process.env.BREVO_PASSWORD || "";
-
+export const BREVO_SMTP =
+	import.meta.env.BREVO_SMTP || process.env.BREVO_SMTP || "";

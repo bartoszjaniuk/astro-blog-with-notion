@@ -1,4 +1,4 @@
-import { News_1 } from "./conts/aktualnosci.consts";
+import { newsy } from "./conts/aktualnosci.consts";
 import { SingleNews } from "./singleNews/SingleNews";
 
 export const News = () => (
@@ -6,14 +6,16 @@ export const News = () => (
 		<h1 className="text-4xl lg:text-5xl text-primary uppercase font-text py-2">
 			Aktualności
 		</h1>
-		<SingleNews {...News_1}>
-			<ul className="list-disc px-2">
-				{News_1.content.map((paragraph, i) => (
-					<li className="text-primary" key={i}>
-						<p className="text-black">{paragraph}</p>
-					</li>
-				))}
-			</ul>
-		</SingleNews>
+		{newsy.map((news, i) => (
+			<SingleNews key={i} {...news}>
+				<ul className="list-disc px-2">
+					{news.content.map((paragraph, i) => (
+						<li className="text-primary" key={i}>
+							<p className="text-black">{paragraph}</p>
+						</li>
+					))}
+				</ul>
+			</SingleNews>
+		))}
 	</main>
 );
