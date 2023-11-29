@@ -37,12 +37,22 @@ const FOOTER_CONTACT: ColumnProps = {
 		{
 			type: "contact",
 			icon: "phone",
+			content: "+ 48 797 125 418",
+		},
+		{
+			type: "contact",
+			icon: "mail",
+			content: "ewa.majewska@e-sprzetstomatologiczny.pl",
+		},
+		{
+			type: "contact",
+			icon: "phone",
 			content: "+ 48 797 125 417",
 		},
 		{
 			type: "contact",
 			icon: "mail",
-			content: "katarzynamazur@e-sprzetstomatologiczny.pl",
+			content: "katarzyna.mazur@e-sprzetstomatologiczny.pl",
 		},
 	],
 };

@@ -19,7 +19,7 @@ export const Hero = () => {
 							alt="Sprzęt Stomatologiczny Logo"
 						/>
 						<div className="absolute bottom-[-1.3rem] left-0 uppercase font-headings text-lg">
-							Czasopismo Stomatologiczne
+							Kwartalnik Techniczno-Informacyjny
 						</div>
 					</div>
 
@@ -35,21 +35,18 @@ export const Hero = () => {
 							</div>
 						</div>
 						<p className="hidden select-none text-transparent">
-							poszukujących ofert i informacji o sprzęcie stomatologicznym,
-							wyrobach oraz materiałach, a także o tym czym kierować się przy
-							ich wyborze. Czytaj najnowszy numer już w pierwszym kwartale 2024.
+							poszukujących ofert i informacji o sprzętach stomatologicznych,
+							wyrobach, technologiach i materiałach.
 						</p>
+
 						<div className="text-lg lg:text-xl text-start">
 							<RevealText
 								placeholderText={[
 									{
-										text: "poszukujących ofert i informacji o sprzęcie",
+										text: "poszukujących ofert i informacji o sprzętach stomatologicznych,",
 									},
 									{
-										text: "stomatologicznym, wyrobach oraz materiałach, a także o tym czym kierować się",
-									},
-									{
-										text: "przy ich wyborze.",
+										text: "wyrobach, technologiach i materiałach.",
 									},
 								]}
 							/>
