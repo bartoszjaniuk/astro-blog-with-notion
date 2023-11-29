@@ -26,23 +26,18 @@ const FOOTER_CONTACT: ColumnProps = {
 	entries: [
 		{
 			type: "contact",
-			icon: "phone",
-			content: "32-733 18 01",
-		},
-		{
-			type: "contact",
 			icon: "mail",
 			content: "faktury@e-sprzetstomatologiczny.pl",
 		},
 		{
 			type: "contact",
 			icon: "phone",
-			content: "+ 48 797 125 418",
+			content: "32-733 18 01",
 		},
 		{
 			type: "contact",
 			icon: "mail",
-			content: "ewa.majewska@e-sprzetstomatologiczny.pl",
+			content: "katarzyna.mazur@e-sprzetstomatologiczny.pl",
 		},
 		{
 			type: "contact",
@@ -52,7 +47,7 @@ const FOOTER_CONTACT: ColumnProps = {
 		{
 			type: "contact",
 			icon: "mail",
-			content: "katarzyna.mazur@e-sprzetstomatologiczny.pl",
+			content: "ewa.majewska@e-sprzetstomatologiczny.pl",
 		},
 	],
 };
@@ -83,7 +78,7 @@ const Footer = () => {
 	return (
 		<footer className="w-full bg-primary text-white h-full ">
 			<div className="container mx-auto h-full primary-selection">
-				<div className="grid grid-cols-1 lg:grid-cols-3 gap-4 py-8 responsive-padding">
+				<div className="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-2 py-8 responsive-padding">
 					<Column {...FOOTER_ADDRESS} />
 					<Column {...FOOTER_CONTACT} />
 					<Column {...FOOTER_ABOUT} />

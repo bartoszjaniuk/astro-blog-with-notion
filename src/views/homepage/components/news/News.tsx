@@ -11,7 +11,7 @@ export const News = () => (
 				<ul className="list-disc px-2">
 					{news.content.map((paragraph, i) => (
 						<li className="text-primary" key={i}>
-							<p className="text-black">{paragraph}</p>
+							<p className="text-black text-xl lg:text-base">{paragraph}</p>
 						</li>
 					))}
 				</ul>
