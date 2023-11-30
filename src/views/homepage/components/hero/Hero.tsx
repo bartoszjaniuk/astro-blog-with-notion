@@ -18,7 +18,7 @@ export const Hero = () => {
 							className="w-full"
 							alt="Sprzęt Stomatologiczny Logo"
 						/>
-						<div className="absolute bottom-[-1.3rem] left-0 uppercase font-headings text-lg">
+						<div className="absolute bottom-[-1.3rem] left-0 uppercase font-headings text-sm lg:text-lg whitespace-nowrap">
 							Kwartalnik Techniczno-Informacyjny
 						</div>
 					</div>

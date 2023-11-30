@@ -36,7 +36,7 @@ export const Oczasopismie = () => {
 					<div className="lg:col-start-1 lg:col-end-2 relative z-10">
 						<span className="bg-shape-white" />
 						<motion.img
-							className="rounded-lg h-full"
+							className="rounded-lg w-full lg:h-full object-cover"
 							src="/images/gabinet.jpg"
 							alt="gabinet stomatologiczny"
 						/>
