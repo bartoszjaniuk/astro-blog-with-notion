@@ -5,6 +5,10 @@ import { RevealText } from "@shared/animations/revealText/RevealText";
 const words = ["specjalistów", "stomatologów", "producentów"];
 
 export const Hero = () => {
+	const handleRedirect = () => {
+		const url = window.location.href;
+		location.assign(`${url}aktualny-numer`);
+	};
 	return (
 		<main className="container pt-14 mx-auto">
 			<div
@@ -53,7 +57,10 @@ export const Hero = () => {
 						</div>
 					</div>
 
-					<button className="group w-full md:w-fit transition-all duration-300 ease-in-out border-2 border-primary  text-primary hover:bg-primary hover:text-white rounded flex py-3 px-5 text-start ">
+					<button
+						onClick={handleRedirect}
+						className="group w-full md:w-fit transition-all duration-300 ease-in-out border-2 border-primary  text-primary hover:bg-primary hover:text-white rounded flex py-3 px-5 text-start"
+					>
 						<div className="text-2xl md:text-2xl md:text-start font-text font-medium tracking-wide">
 							<p className="font-semibold">Czytaj najnowszy numer</p>
 							<p className="font-semibold">już w pierwszym kwartale</p>
