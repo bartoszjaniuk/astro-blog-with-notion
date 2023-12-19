@@ -21,13 +21,6 @@ export const Main = () => {
 							</div>
 							<div className="flex flex-col gap-4">
 								<div className="flex gap-2 items-center">
-									<Icon icon="mdi:cellphone" width={ICON_SIZE} />
-									<a className="text-md 2xl:text-2xl" href="tel:32 733 18 01">
-										32 733 18 01
-									</a>
-								</div>
-
-								<div className="flex gap-2 items-center">
 									<Icon icon="mdi:email-outline" width={ICON_SIZE} />
 									<a
 										className="underline text-md 2xl:text-2xl text-thirdnary"

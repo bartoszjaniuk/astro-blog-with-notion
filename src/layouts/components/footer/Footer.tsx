@@ -31,11 +31,6 @@ const FOOTER_CONTACT: ColumnProps = {
 		},
 		{
 			type: "contact",
-			icon: "phone",
-			content: "32-733 18 01",
-		},
-		{
-			type: "contact",
 			icon: "mail",
 			content: "katarzyna.mazur@e-sprzetstomatologiczny.pl",
 		},
