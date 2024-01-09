@@ -1,6 +1,6 @@
 ---
-import Homepage from '@views/homepage/Homepage.astro'
-import Layout from '../layouts/Layout.astro';
+import Homepage from "@views/homepage/Homepage.astro";
+import Layout from "../layouts/Layout.astro";
 // import { getPosts } from 'src/lib/notion/posts';
 // import { NUMBER_OF_POSTS_PER_PAGE } from 'src/consts/notion';
 // import { getAllTags } from 'src/lib/notion/tags';
@@ -8,16 +8,15 @@ import Layout from '../layouts/Layout.astro';
 //   getPosts(NUMBER_OF_POSTS_PER_PAGE),
 //   getAllTags(),
 // ])
-
-
-
 ---
 
-<Layout title="Czasomismo stomatologiczne" description='Strona przeznaczona dla specjalistów poszukujących ofert i informacji o sprzęcie stomatologicznym, wyrobach oraz materiałach, a także o tym czym kierować się przy ich wyborze.'>
-  <Homepage/>
+<Layout
+	title="Sprzęt Stomatologiczny - Home"
+	description="Strona przeznaczona dla specjalistów poszukujących ofert i informacji o sprzętach stomatologicznych, wyrobach, technologiach i materiałach."
+>
+	<Homepage />
 
-  
-<!--   
+	<!--   
 
   <div>
     { posts.length === 0 ? 'No content' :
@@ -29,4 +28,3 @@ import Layout from '../layouts/Layout.astro';
   </div>
 } -->
 </Layout>
-
