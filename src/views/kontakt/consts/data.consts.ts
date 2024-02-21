@@ -14,5 +14,12 @@ export const CONTACT_DATA = {
 			phoneNumber: "+ 48 797 125 418",
 			mail: "ewa.majewska@e-sprzetstomatologiczny.pl",
 		},
+		{
+			fullName: "Aleksandra Kajstura-Janiuk",
+			position: "Specjalista ds. marketingu i reklamy",
+			imageURL: "/images/profilowe-3.png",
+			phoneNumber: "+ 570 498 067",
+			mail: "marketing@e-sprzetstomatologiczny.pl",
+		},
 	],
 };
