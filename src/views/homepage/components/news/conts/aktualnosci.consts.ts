@@ -1,5 +1,14 @@
 export const newsy = [
 	{
+		title: "Jubileusz 30-lecia Targów KRAKDENT®",
+		imagePath: "/assets/aktualnosci/news_4.jpg",
+		pathToFile: "/assets/aktualnosci/news_4.pdf",
+		content: [
+			"Z okazji jubileuszu 30-lecia Targów KRAKDENT ® , pragniemy podziękować wszystkim naszym Wystawcom, Gościom oraz Partnerom za wiele lat wyjątkowej współpracy. Dziękujemy za wspólnie spędzone chwile i ciągłą pracę nad rozwojem targów.",
+			"W szczególności chcemy podziękować firmom, które były z nami od samego początku i które po raz kolejny będzie można spotkać na naszych targach. Poldent, Hol-Dental Depot, Stomed, Megadenta oraz Magazyn Stomatologiczny - dziękujemy, że wspólnie już po raz 30-ty możemy stworzyć miejsce spotkań, wymiany doświadczeń i prezentacji najnowszych rozwiązań stomatologicznych. Niezmiernie nam miło, że wciąż mamy możliwość razem pracować nad organizacją największych targów stomatologicznych w Polsce nieustannie odpowiadając na potrzeby branży.",
+		],
+	},
+	{
 		title: "Lekarze dentyści będą mogli szkolić się z psychoterapii",
 		imagePath: "/assets/aktualnosci/news_3.jpg",
 		pathToFile: "/assets/aktualnosci/news_3.pdf",
