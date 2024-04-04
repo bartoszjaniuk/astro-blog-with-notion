@@ -24,7 +24,7 @@ export const AktualnyNumerPage = () => {
 						href="/wydania/wydanie1.pdf"
 						target="_blank"
 					>
-						Kliknij tutaj, aby pobrać PDF
+						Kliknij tutaj, aby wyświetlić czasopismo
 					</a>
 				</div>
 			</main>
