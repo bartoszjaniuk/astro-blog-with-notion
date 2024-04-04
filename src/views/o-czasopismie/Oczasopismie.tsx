@@ -14,9 +14,9 @@ export const Oczasopismie = () => {
 
 					<p className="text-xl font-headings pb-10 lg:pb-0">
 						„Sprzęt Stomatologiczny” to kwartalnik techniczno-informacyjny,
-						który skierowany będzie do profesjonalistów zawodowo związanych z
+						który skierowany jest do profesjonalistów zawodowo związanych z
 						branżą stomatologiczną, kadry zarządzającej w klinikach i
-						gabinetach. Periodyk przeznaczony będzie dla lekarzy stomatologów
+						gabinetach. Periodyk przeznaczony jest dla lekarzy stomatologów
 						prowadzących zarówno gabinety, jak i kliniki stomatologiczne oraz
 						właścicieli pracowni rentgenowskich, dla protetyków, a także do
 						higienistek i asystentek dentystycznych, jak również do wszystkich
@@ -123,12 +123,12 @@ const dentalFields = [
 ];
 
 const magazineList = [
-	"Czasopismo promowane będzie na imprezach branżowych w kraju, zarówno w formie elektronicznej jak i drukowanej.",
+	"Czasopismo promowane jest na imprezach branżowych w kraju, zarówno w formie elektronicznej jak i drukowanej.",
 	"Pierwsze wydanie otrzymają uczestnicy 30. Międzynarodowych Targów Dentystycznych „Krakdent” w Krakowie w kwietniu 2024 roku.",
-	"Skupimy się na opisie narzędzi, sprzętu i materiałów stomatologicznych oraz na tym, czym kierować się przy ich zakupie i konserwacji.",
-	"Na bieżąco zamieszczać będziemy porady z zakresu wyposażenia gabinetów stomatologicznych, skierowane do lekarzy prowadzących praktykę lub zamierzających podjąć wyzwanie związane z uruchomieniem i prowadzeniem działalności lekarsko-dentystycznej.",
-	"Będziemy poruszać również tematykę związaną z zasadami i procedurami pracy w gabinecie stomatologicznym.",
-	"Czasopismo wydawane będzie głównie w formie elektronicznej, a przy okazji wydarzeń branżowych planowany jest także nakład drukowany.",
+	"Skupiamy się na opisie narzędzi, sprzętu i materiałów stomatologicznych oraz na tym, czym kierować się przy ich zakupie i konserwacji.",
+	"Na bieżąco zamieszczamy porady z zakresu wyposażenia gabinetów stomatologicznych, skierowane do lekarzy prowadzących praktykę lub zamierzających podjąć wyzwanie związane z uruchomieniem i prowadzeniem działalności lekarsko-dentystycznej.",
+	"Poruszamy również tematykę związaną z zasadami i procedurami pracy w gabinecie stomatologicznym.",
+	"Czasopismo wydawane jest głównie w formie elektronicznej, a przy okazji wydarzeń branżowych planowany jest także nakład drukowany.",
 	"Uruchomiona już jest strona internetowa www.e-stomatolog.pl, na której zamieszczane będą elektroniczne wydania czasopisma oraz informacje prasowe.",
 ];
 
@@ -143,19 +143,19 @@ const list = [
 	},
 	{
 		imagePath: "/images/about/scientist.svg",
-		text: "Skupimy się na opisie narzędzi, sprzętu i materiałów stomatologicznych oraz na tym, czym kierować się przy ich zakupie i konserwacji.",
+		text: "Skupaimy się na opisie narzędzi, sprzętu i materiałów stomatologicznych oraz na tym, czym kierować się przy ich zakupie i konserwacji.",
 	},
 	{
 		imagePath: "/images/about/chat.svg",
-		text: "Na bieżąco zamieszczać będziemy porady z zakresu wyposażenia gabinetów stomatologicznych, skierowane do lekarzy prowadzących praktykę lub zamierzających podjąć wyzwanie związane z uruchomieniem i prowadzeniem działalności lekarsko-dentystycznej.",
+		text: "Na bieżąco zamieszczamy porady z zakresu wyposażenia gabinetów stomatologicznych, skierowane do lekarzy prowadzących praktykę lub zamierzających podjąć wyzwanie związane z uruchomieniem i prowadzeniem działalności lekarsko-dentystycznej.",
 	},
 	{
 		imagePath: "/images/about/team.svg",
-		text: "Będziemy poruszać również tematykę związaną z zasadami i procedurami pracy w gabinecie stomatologicznym.",
+		text: "Poruszamy również tematykę związaną z zasadami i procedurami pracy w gabinecie stomatologicznym.",
 	},
 	{
 		imagePath: "/images/about/conversation.svg",
-		text: "Czasopismo wydawane będzie głównie w formie elektronicznej, a przy okazji wydarzeń branżowych planowany jest także nakład drukowany.",
+		text: "Czasopismo wydawane jest głównie w formie elektronicznej, a przy okazji wydarzeń branżowych jest także nakład drukowany.",
 	},
 	// {
 	// 	imagePath: "/images/about/reminder.svg",
