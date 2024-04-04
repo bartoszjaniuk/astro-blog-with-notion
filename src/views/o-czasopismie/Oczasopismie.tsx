@@ -43,7 +43,7 @@ export const Oczasopismie = () => {
 					</div>
 					<div className="lg:col-start-2 lg:col-end-3 h-full">
 						<h3 className="text-white text-3xl lg:text-4xl mb-4 mt-4">
-							W czasopiśmie poruszymy tematykę:
+							W czasopiśmie poruszamy tematykę:
 						</h3>
 						<ul className="list-disc list-inside">
 							{dentalFields.map((field, index) => (
@@ -61,7 +61,7 @@ export const Oczasopismie = () => {
 			<div className="py-8 lg:py-16 bg-white">
 				<div className="container mx-auto responsive-padding flex flex-col gap-3">
 					<h3 className="text-4xl  lg:text-5xl text-primary  font-light">
-						Czasopismo będzie promowane <br /> na imprezach branżowych w kraju,
+						Czasopismo jest promowane <br /> na imprezach branżowych w kraju,
 						<br /> zarówno w formie elektronicznej jak i drukowanej.
 					</h3>
 				</div>
