@@ -57,15 +57,15 @@ export const Hero = () => {
 						</div>
 					</div>
 
-					<button
-						onClick={handleRedirect}
+					<a
+						href="/wydania/wydanie1.pdf"
+						target="_blank"
 						className="group w-full md:w-fit transition-all duration-300 ease-in-out border-2 border-primary  text-primary hover:bg-primary hover:text-white rounded flex py-3 px-5 text-start"
 					>
 						<div className="text-2xl md:text-2xl md:text-start font-text font-medium tracking-wide">
 							<p className="font-semibold">Czytaj najnowszy numer</p>
-							<p className="font-semibold">już w pierwszym kwartale</p>
-							<div className="flex items-center gap-2 ">
-								<span className="font-semibold">2024</span>
+							<div className="flex items-center justify-center gap-2 ">
+								<span className="font-semibold">1/2024</span>
 								<Icon
 									width={30}
 									icon="mdi:arrow-right"
@@ -73,7 +73,7 @@ export const Hero = () => {
 								/>
 							</div>
 						</div>
-					</button>
+					</a>
 				</div>
 				<div className="lg:col-start-3 lg:col-end-6 relative flex justify-start lg:justify-end">
 					<span className="bg-shape left-0 lg:left-[5%]" />
