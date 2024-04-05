@@ -143,7 +143,7 @@ const list = [
 	},
 	{
 		imagePath: "/images/about/scientist.svg",
-		text: "Skupaimy się na opisie narzędzi, sprzętu i materiałów stomatologicznych oraz na tym, czym kierować się przy ich zakupie i konserwacji.",
+		text: "Skupiamy się na opisie narzędzi, sprzętu i materiałów stomatologicznych oraz na tym, czym kierować się przy ich zakupie i konserwacji.",
 	},
 	{
 		imagePath: "/images/about/chat.svg",
