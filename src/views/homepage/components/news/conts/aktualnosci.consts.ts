@@ -1,5 +1,28 @@
 export const newsy = [
 	{
+		title: "To tu spotyka się cała branża - podsumowanie Targów KRAKDENT® 2024",
+		imagePath: "/assets/wydarzenia/krakdent_2024.jpg",
+		pathToFile: "/assets/wydarzenia/krakdent_2024.pdf",
+		content: [
+			`Od 30. lat Targi KRAKDENT® wspólnie z wystawcami i
+			odwiedzającymi piszą historię polskiej branży
+			stomatologicznej. Dlatego jubileuszowa edycja wydarzenia,
+			odbywająca się w dniach 11-13 kwietnia w EXPO Kraków,
+			musiała być huczna!`,
+			`3 dni, 10 811 zwiedzających, 342 wystawców m.in. z Austrii, Belgii, Chin, Czech, Danii,
+			Finlandii, Francji, Hiszpanii, Niderlandów, Niemiec, Korei Płd., Polski, Rumunii, Słowacji,
+			Szwajcarii, Szwecji, Ukrainy, USA, Węgier, Włoch, 16 kursów medycznych oraz
+			Międzynarodowy Kongres DENTAL SPAGHETTI w ramach KRAKDENT-edu, 88 szkoleń i
+			prezentacji wystawców w przestrzeni EXPO Kraków, 16 unikatowych wystąpień na scenie
+			KRAKDENT MeetUp, Konkurs Polskiego Towarzystwa Techników Dentystycznych -
+			"Korona na 5+ II", ponad 150 nowości produktowych w tym produkty dla weterynarzy i … 350
+			kilogramów pomarańczy wyciśniętych w Dżus Busie. Organizatorzy zadbali również o szereg
+			atrakcji dodatkowych, z których największą uwagę przyciągnęła wystawa prac Art on the
+			Wheels, DENTOspoty oraz widokowe loty helikopterem.`,
+		],
+	},
+
+	{
 		title: "Jubileusz 30-lecia Targów KRAKDENT®",
 		imagePath: "/assets/aktualnosci/news_4.jpg",
 		pathToFile: "/assets/aktualnosci/news_4.pdf",
