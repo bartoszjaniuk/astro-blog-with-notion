@@ -60,9 +60,9 @@ const GuardModal = () => {
 									<div className="bg-white rounded-lg flex flex-col gap-4">
 										<p className="text-lg">
 											Strona przeznaczona dla specjalistów poszukujących ofert i
-											informacji o sprzętach medycznych, wyrobach, technologiach
-											oraz materiałach i maszynach do produkcji wyrobów
-											medycznych.
+											informacji o sprzętach wykorzystywanych w branży
+											stomatologicznej, a także wyrobach, technologiach i
+											materiałach stomatologicznych.
 										</p>
 										<div className="flex flex-col lg:flex-row gap-4 w-full">
 											<button
