@@ -1,17 +1,19 @@
 import { dropIn } from "@shared/animations/modal";
 import { AnimatePresence, motion } from "framer-motion";
 import React, { useEffect, useState } from "react";
+import { useCookies } from "react-cookie";
 import { StorageKeys } from "src/utils/storage/enums/storageKeys.enum";
-import { storage } from "src/utils/storage/storage";
 
 const GuardModal = () => {
+	const [cookies, setCookie, removeCookie] = useCookies([StorageKeys.PRO_USER]);
 	const [isProfessionalUser, setIsProfessionalUser] = useState(
-		storage.getItem(StorageKeys.PRO_USER),
+		cookies.isProfessionalUser,
 	);
+
 	const [isVisible, setIsVisible] = useState(true);
 
 	useEffect(() => {
-		const user = storage.getItem(StorageKeys.PRO_USER);
+		const user = cookies.isProfessionalUser;
 		if (user) {
 			setIsVisible(true);
 			setIsProfessionalUser(user);
@@ -22,11 +24,14 @@ const GuardModal = () => {
 	const toggleVisible = () => setIsVisible((prev) => !prev);
 
 	const handleAccept = () => {
-		if (!isProfessionalUser) storage.setItem(StorageKeys.PRO_USER, true);
+		const expirationDate = new Date();
+		expirationDate.setMonth(expirationDate.getMonth() + 1);
+		if (!isProfessionalUser)
+			setCookie(StorageKeys.PRO_USER, true, { expires: expirationDate });
 		toggleVisible();
 	};
 	const handleReject = () => {
-		if (isProfessionalUser) storage.removeItem(StorageKeys.PRO_USER);
+		if (isProfessionalUser) removeCookie(StorageKeys.PRO_USER);
 		window.history.back();
 	};
 
