@@ -9,7 +9,7 @@ export const WydarzeniaPage = () => {
 				Wydarzenia
 			</h1>
 			{WYDARZENIA.map((wydarzenie, index) => (
-				<Card {...wydarzenie} key={index} />
+				<Card {...wydarzenie} key={index} children={wydarzenie.shortDesc} />
 			))}
 		</main>
 	);

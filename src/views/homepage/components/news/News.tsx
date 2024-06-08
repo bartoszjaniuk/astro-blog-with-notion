@@ -1,3 +1,4 @@
+import { Card } from "@views/wydarzenia/card/Card";
 import { newsy } from "./conts/aktualnosci.consts";
 import { SingleNews } from "./singleNews/SingleNews";
 
@@ -7,7 +8,7 @@ export const News = () => (
 			Aktualności
 		</h1>
 		{newsy.map((news, i) => (
-			<SingleNews key={i} {...news}>
+			<Card key={i} {...news}>
 				<ul className="list-disc px-2">
 					{news.content.map((paragraph, i) => (
 						<li className="text-primary" key={i}>
@@ -15,7 +16,7 @@ export const News = () => (
 						</li>
 					))}
 				</ul>
-			</SingleNews>
+			</Card>
 		))}
 	</main>
 );

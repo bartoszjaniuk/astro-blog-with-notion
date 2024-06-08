@@ -9,7 +9,19 @@ export const WYDARZENIA = [
 		we w celu uzyskania lepszego współczynnika 
 		efektywności kosztowej, to miejsce na dotarcie 
 		do twoich klientów w najszybszy i najbardziej 
-		bezpośredni sposób.`,
+		bezpośredni sposób.
+		
+		Jak  co  roku  wystawie  CEDE  towarzyszyć  będzie  pro-
+gram  naukowy,  skoncentrowany  wokół  tematów  zwią-
+zanych  ze  stomatologią  cyfrową.  Technologie  cyfrowe  
+wykorzystywane  w  procedurach  stomatologicznych  nie  
+tylko  przyspieszają  proces  leczenia,  ale  także  zwiększają  
+jego  precyzję,  przenosząc  leczenie  na  wyższy  poziom.  
+Rozwiązania  cyfrowe  coraz  śmielej  wkraczają  do  gabi-
+netów stomatologicznych, począwszy od diagnostyki, 
+poprzez projektowanie uśmiechu, planowanie zabiegów 
+chirurgicznych, rosnącą rolę cyfrowej fotografii, szablony 
+chirurgiczne, cyfrową endodoncję.`,
 		imagePath: "/assets/wydarzenia/cede_2024.jpg",
 		pathToFile: "/assets/wydarzenia/cede_2024.pdf",
 	},
