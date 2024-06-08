@@ -1,5 +1,20 @@
 export const WYDARZENIA = [
 	{
+		title: "32. Środkowoeuropejska Wystawa Stomatologiczna CEDE 2024",
+		shortDesc: `Wystawa CEDE to w tej branży, najdłużej istnie-
+		jące na polskim rynku, bo od 1991 r., komplek-
+		sowe narzędzie sprzedaży, promocji  
+		i marketingu, pozwalające połączyć wszystkie 
+		istniejące działania sprzedażowe i marketingo-
+		we w celu uzyskania lepszego współczynnika 
+		efektywności kosztowej, to miejsce na dotarcie 
+		do twoich klientów w najszybszy i najbardziej 
+		bezpośredni sposób.`,
+		imagePath: "https://www.cede.pl/images/social/cede_2024.png",
+		pathToFile: "/assets/wydarzenia/cede_2024.pdf",
+	},
+
+	{
 		title: "Warsaw Dental Medica Show 7. Edycja",
 		shortDesc: `Warsaw Dental Medica Show to branżowe specjalistyczne wydarzenie odbywające się w Ptak
 		Warsaw Expo, Największym Centrum Targowo – Kongresowym w Europie Środkowej. Mające

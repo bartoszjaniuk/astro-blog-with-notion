@@ -1,5 +1,23 @@
 export const newsy = [
 	{
+		title:
+			"Warsaw Dental Medica Show stolicą innowacji w stomatologii i medycynie estetycznej. Odwiedź 7. edycję targów",
+		imagePath: "/assets/aktualnosci/dental_medica_2024.jpg",
+		pathToFile: "/assets/aktualnosci/dental_medica_2024.pdf",
+		content: [
+			`Warsaw Dental Medica Show to innowacyjne
+			wydarzenie, odpowiadające na potrzeby współ-
+			czesnego biznesu. Łączy ono dwie branże
+			- stomatologiczną i medycyny estetycznej
+			- ze względu na ich wzajemną kooperację na
+			drodze do zwiększenia satysfakcji pacjentów.
+			Siódma edycja międzynarodowych targów od-
+			będzie się w Ptak Warsaw Expo w dniach
+			5-7 września 2024 roku.`,
+		],
+	},
+
+	{
 		title: "To tu spotyka się cała branża - podsumowanie Targów KRAKDENT® 2024",
 		imagePath: "/assets/wydarzenia/krakdent_2024.jpg",
 		pathToFile: "/assets/wydarzenia/krakdent_2024.pdf",
