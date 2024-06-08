@@ -10,7 +10,7 @@ export const WYDARZENIA = [
 		efektywności kosztowej, to miejsce na dotarcie 
 		do twoich klientów w najszybszy i najbardziej 
 		bezpośredni sposób.`,
-		imagePath: "https://www.cede.pl/images/social/cede_2024.png",
+		imagePath: "/assets/wydarzenia/cede_2024.jpg",
 		pathToFile: "/assets/wydarzenia/cede_2024.pdf",
 	},
 
