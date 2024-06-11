@@ -27,6 +27,14 @@ export const PolecamyPage = () => {
 						alt="ExpoDent 2024"
 					/>
 				</a>
+				<a target="_blank" href="https://cede.pl">
+					<img
+						width={900}
+						className="transition duration-300 ease-in-out hover:scale-105"
+						src="/assets/polecamy/cede_2024.gif"
+						alt="Cede"
+					/>
+				</a>
 			</main>
 		</PageLayout>
 	);

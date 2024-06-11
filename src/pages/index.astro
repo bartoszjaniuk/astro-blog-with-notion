@@ -1,6 +1,8 @@
 ---
 import Homepage from "@views/homepage/Homepage.astro";
 import Layout from "../layouts/Layout.astro";
+import { client, eventsClient } from "src/lib/notion/client";
+import { NOTION_DATABASE_EVENTS } from "src/consts/server-constants";
 // import { getPosts } from 'src/lib/notion/posts';
 // import { NUMBER_OF_POSTS_PER_PAGE } from 'src/consts/notion';
 // import { getAllTags } from 'src/lib/notion/tags';
@@ -8,6 +10,46 @@ import Layout from "../layouts/Layout.astro";
 //   getPosts(NUMBER_OF_POSTS_PER_PAGE),
 //   getAllTags(),
 // ])
+
+const getPosts = async () => {
+	try {
+		const response = await eventsClient.databases.query({
+			database_id: "52d911bff8da49fbaecf320536faa8ed",
+			filter: {
+				and: [
+					{
+						property: "Published",
+						checkbox: {
+							equals: true,
+						},
+					},
+					{
+						property: "Date",
+						date: {
+							on_or_before: new Date().toISOString(),
+						},
+					},
+				],
+			},
+		});
+
+		const results = response.results;
+		const properties = results.map((result) => result.properties);
+		return properties.map((property) => {
+			return {
+				title: property.Page.title[0].text.content,
+				slug: property.Slug.rich_text[0].text.content,
+				imageUrl: property.Image.files[0].file.url,
+				sourceFile: property.SourceFile.files[0].file.url,
+				description: property.Excerpt.rich_text[0].text.content,
+			};
+		});
+	} catch (error) {}
+};
+
+const data = await getPosts();
+
+console.log({ data });
 ---
 
 <Layout

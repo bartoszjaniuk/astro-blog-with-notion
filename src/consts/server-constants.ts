@@ -2,6 +2,11 @@ export const NOTION_API_SECRET =
 	import.meta.env.NOTION_API_SECRET || process.env.NOTION_API_SECRET || "";
 export const DATABASE_ID =
 	import.meta.env.NOTION_DATABASE_ID || process.env.DATABASE_ID || "";
+
+export const NOTION_DATABASE_EVENTS =
+	import.meta.env.NOTION_DATABASE_EVENTS ||
+	process.env.NOTION_DATABASE_EVENTS ||
+	"";
 export const MAILER_LITE_SECRET =
 	import.meta.env.MAILER_LITE_TOKEN || process.env.MAILER_LITE_TOKEN || "";
 export const BREVO_SMTP =
