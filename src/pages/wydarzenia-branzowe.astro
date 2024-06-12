@@ -1,11 +1,66 @@
 ---
 import Layout from "@layouts/Layout.astro";
 import { WydarzeniaPage } from "@views/wydarzenia/WydarzeniaPage";
+import { NOTION_DATABASE_EVENTS_DB_ID } from "src/consts/server-constants";
+import { eventsClient } from "src/lib/notion/client";
+
+type Event = {
+	title: string;
+	slug: string;
+	imageUrl: string;
+	sourceFile: string;
+	description: string;
+	date: string;
+};
+
+const getPosts = async () => {
+	try {
+		const response = await eventsClient.databases.query({
+			database_id: NOTION_DATABASE_EVENTS_DB_ID,
+			filter: {
+				and: [
+					{
+						property: "Published",
+						checkbox: {
+							equals: true,
+						},
+					},
+				],
+			},
+			sorts: [
+				{
+					property: "Date",
+					direction: "descending",
+				},
+			],
+		});
+
+		const results = response.results;
+		const properties = results.map((result) => result.properties);
+
+		const data = properties.map((property) => {
+			return {
+				title: property.Page.title[0].text.content,
+				slug: property.Slug.rich_text[0].text.content,
+				imageUrl: property.Image.files[0].file.url,
+				sourceFile: property.SourceFile.files[0].file.url,
+				description: property.Excerpt.rich_text[0].text.content,
+				date: property.Date.date.start,
+			};
+		}) as Event[];
+		return { data, error: undefined };
+	} catch (error) {
+		console.error(error.message);
+		return { error: error.message, data: [] };
+	}
+};
+
+const { data, error } = await getPosts();
 ---
 
 <Layout
 	title="Czasopismo Stomatologiczne - Tematy, wydarzenia, artykuły"
 	description="Tutaj znajdziesz najnowsze i te starsze, artykuły z naszego czasopisma. Opisujemy również najświeższe wydarzenia z naszej branży, relacje z targów i konferencji, nowości i nowe trendy w branży. Wszystko w przystępnej formie MINI BLOGA."
 >
-	<WydarzeniaPage client:load />
+	<WydarzeniaPage client:load data={data} />
 </Layout>

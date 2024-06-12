@@ -1,7 +1,7 @@
 import { Client } from "@notionhq/client";
 import {
 	NOTION_API_SECRET,
-	NOTION_DATABASE_EVENTS,
+	NOTION_DATABASE_EVENTS_SECRET,
 } from "src/consts/server-constants";
 
 export const client = new Client({
@@ -9,5 +9,5 @@ export const client = new Client({
 });
 
 export const eventsClient = new Client({
-	auth: NOTION_DATABASE_EVENTS,
+	auth: NOTION_DATABASE_EVENTS_SECRET,
 });

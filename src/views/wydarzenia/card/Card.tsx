@@ -5,10 +5,12 @@ export const Card = ({
 	pathToFile,
 	title,
 	children,
+	date,
 }: PropsWithChildren<{
 	title: string;
 	imagePath: string;
 	pathToFile: string;
+	date?: string;
 }>) => {
 	return (
 		<div className="w-full h-full lg:h-[350px] shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px] bg-navbar rounded-lg flex flex-col lg:flex-row gap-2">
@@ -16,7 +18,7 @@ export const Card = ({
 				<img
 					src={imagePath}
 					alt={imagePath}
-					className="h-full w-full object-fill rounded-lg"
+					className="h-full w-full object-cover rounded-lg"
 				/>
 			</div>
 			<div className="w-full flex flex-col pt-2">
@@ -27,7 +29,7 @@ export const Card = ({
 				<div className="lg:overflow-y-auto p-2 lg:max-h-[200px]">
 					{children}
 				</div>
-				<div className="flex flex-grow w-full">
+				<div className="flex flex-grow flex-col-reverse lg:flex-row  w-full  justify-between p-2">
 					<a
 						href={pathToFile}
 						target="_blank"
@@ -36,6 +38,7 @@ export const Card = ({
 					>
 						Czytaj więcej
 					</a>
+					<h5 className="self-end text-lg p-2">{date}</h5>
 				</div>
 			</div>
 		</div>
