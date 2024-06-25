@@ -65,7 +65,7 @@ export const Hero = () => {
 						<div className="text-2xl md:text-2xl md:text-start font-text font-medium tracking-wide">
 							<p className="font-semibold">Czytaj najnowszy numer</p>
 							<div className="flex items-center justify-center gap-2 ">
-								<span className="font-semibold">1/2024</span>
+								<span className="font-semibold">2/2024</span>
 								<Icon
 									width={30}
 									icon="mdi:arrow-right"
