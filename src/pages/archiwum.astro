@@ -1,0 +1,12 @@
+---
+import Layout from "@layouts/Layout.astro";
+import { AktualnyNumerPage } from "@views/aktualny-numer/AktualnyNumerPage";
+import { ArchiwumPage } from "@views/archiwum/ArchiwumPage";
+---
+
+<Layout
+	title="Sprzęt Stomatologiczny - Archiwum"
+	description="Czytaj wydane wcześniej czasopisma"
+>
+	<ArchiwumPage client:load />
+</Layout>

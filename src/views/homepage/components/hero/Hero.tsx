@@ -58,7 +58,7 @@ export const Hero = () => {
 					</div>
 
 					<a
-						href="/wydania/wydanie1.pdf"
+						href="/wydania/wydanie2.pdf"
 						target="_blank"
 						className="group w-full md:w-fit transition-all duration-300 ease-in-out border-2 border-primary  text-primary hover:bg-primary hover:text-white rounded flex py-3 px-5 text-start"
 					>

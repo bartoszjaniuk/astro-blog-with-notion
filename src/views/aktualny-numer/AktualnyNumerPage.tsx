@@ -8,7 +8,7 @@ export const AktualnyNumerPage = () => {
 				<div className="flex flex-col gap-8 justify-center items-center">
 					<a
 						className="max-w-[700px]"
-						href="/wydania/wydanie1.pdf"
+						href="/wydania/wydanie2.pdf"
 						target="_blank"
 					>
 						<Tilt transitionSpeed={2000} gyroscope={true}>
