@@ -10,9 +10,6 @@ export const ArchiwumPage = () => {
 				</h1>
 				<ul className="list-none flex gap-8">
 					<li className="flex flex-col gap-2">
-						<h5 className="font-light text-lg lg:text-2xl text-primary ">
-							1/2024
-						</h5>
 						<a
 							href="/wydania/wydanie1.pdf"
 							target="_blank"
@@ -24,8 +21,10 @@ export const ArchiwumPage = () => {
 								src="/images/currentNumber/wydanie1.png"
 								alt="Pierwsza strona wydania 1/2024"
 							/>
+							<h5 className="font-light text-lg lg:text-2xl text-primary text-center">
+								1/2024
+							</h5>
 						</a>
-						<p className="font-light text-lg font-headings">styczeń, luty</p>
 					</li>
 				</ul>
 			</div>
