@@ -16,7 +16,7 @@ const Navbar = () => {
 	const toggleNewsletter = () => setIsNewsletterVisible((prev) => !prev);
 
 	const handleRedirectToActualMagazinePage = () => {
-		if (!localStorage.getItem(StorageKeys.VERIFY_USER)) return toggleModal();
+		// if (!localStorage.getItem(StorageKeys.VERIFY_USER)) return toggleModal();
 		const url = window.location.href;
 		location.assign(`${url}/aktualny-numer`);
 	};
