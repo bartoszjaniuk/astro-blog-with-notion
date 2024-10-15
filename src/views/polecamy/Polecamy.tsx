@@ -79,7 +79,7 @@ export const PolecamyPage = () => {
 					<img
 						width={900}
 						className="transition duration-300 ease-in-out hover:scale-105"
-						src="/assets/polecamy/optident.png"
+						src="/assets/polecamy/optident.jpg"
 						alt="Optident"
 					/>
 				</a>
