@@ -1,9 +1,10 @@
 import { PageLayout } from "@shared/pageLayout/PageLayout";
+import { EmintoBanner } from "./components/EmintoBanner";
 
 export const PolecamyPage = () => {
 	return (
 		<PageLayout>
-			<main className="container p-4 flex flex-col-reverse gap-4">
+			<main className="container p-4 flex flex-col-reverse gap-4 relative">
 				<a
 					target="_blank"
 					href="https://www.dentalmedicashow.pl"
@@ -63,14 +64,7 @@ export const PolecamyPage = () => {
 						alt="Straumann Sirios"
 					/>
 				</a>
-				<a target="_blank" href="https://eminto.tv" className="w-fit">
-					<img
-						width={900}
-						className="transition duration-300 ease-in-out hover:scale-105 h-[148px] object-cover"
-						src="/assets/polecamy/eminto.png"
-						alt="Eminto.tv"
-					/>
-				</a>
+
 				<a
 					target="_blank"
 					href="https://optident.pl/oferta/skaner-shining-3d-aoralscan-elite/"
@@ -83,6 +77,7 @@ export const PolecamyPage = () => {
 						alt="Optident"
 					/>
 				</a>
+				<EmintoBanner />
 			</main>
 		</PageLayout>
 	);
