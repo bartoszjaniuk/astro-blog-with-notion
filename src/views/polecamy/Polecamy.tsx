@@ -3,7 +3,7 @@ import { PageLayout } from "@shared/pageLayout/PageLayout";
 export const PolecamyPage = () => {
 	return (
 		<PageLayout>
-			<main className="container p-4 flex flex-col gap-4">
+			<main className="container p-4 flex flex-col-reverse gap-4">
 				<a
 					target="_blank"
 					href="https://www.dentalmedicashow.pl"
