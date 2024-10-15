@@ -4,7 +4,7 @@ import { EmintoBanner } from "./components/EmintoBanner";
 export const PolecamyPage = () => {
 	return (
 		<PageLayout>
-			<main className="container p-4 flex flex-col-reverse gap-4 relative">
+			<main className="container p-4 flex flex-col-reverse gap-4 relative ">
 				<a
 					target="_blank"
 					href="https://www.dentalmedicashow.pl"
