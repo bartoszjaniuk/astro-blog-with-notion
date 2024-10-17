@@ -48,7 +48,11 @@ export const PolecamyPage = () => {
 						alt="Cede"
 					/>
 				</a>
-				<a target="_blank" href="https://ems-poland.com" className="w-fit">
+				<a
+					target="_blank"
+					href="https://emsdent.com/rewolucja-w-profilaktyce"
+					className="w-fit"
+				>
 					<img
 						width={900}
 						className="transition duration-300 ease-in-out hover:scale-105"
