@@ -1,6 +1,20 @@
 export const newsy = [
 	{
 		title:
+			"Międzynarodowe Targi Stomatologiczne KRAKDENT® w Krakowie z nominacją w konkursie Złote Spinacze",
+		imagePath: "/assets/aktualnosci/krakdent-spinacze.png",
+		pathToFile: "/assets/aktualnosci/krakdent-spinacze.pdf",
+		content: [
+			`Z ogromną radością informujemy, że 30. Międzynarodowe Targi Stomatologiczne KRAKDENT®
+organizowane przez Targi w Krakowie otrzymały nominację w 22. edycji konkursu Złote Spinacze.`,
+			`Złote Spinacze są największym konkursem public relations w Polsce. Jego celem jest zwiększanie
+profesjonalizmu i podnoszenie standardów w branży PR poprzez promowanie najlepszych,
+najbardziej kreatywnych i rzetelnie wykonanych projektów w obszarze PR.`,
+		],
+	},
+
+	{
+		title:
 			"Warsaw Dental Medica Show stolicą innowacji w stomatologii i medycynie estetycznej. Odwiedź 7. edycję targów",
 		imagePath: "/assets/aktualnosci/dental_medica_2024.jpg",
 		pathToFile: "/assets/aktualnosci/dental_medica_2024.pdf",
@@ -16,7 +30,6 @@ export const newsy = [
 			5-7 września 2024 roku.`,
 		],
 	},
-
 	{
 		title: "To tu spotyka się cała branża - podsumowanie Targów KRAKDENT® 2024",
 		imagePath: "/assets/wydarzenia/krakdent_2024.jpg",
