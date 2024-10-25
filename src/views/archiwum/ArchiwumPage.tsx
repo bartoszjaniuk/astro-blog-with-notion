@@ -26,6 +26,23 @@ export const ArchiwumPage = () => {
 							</h5>
 						</a>
 					</li>
+					<li className="flex flex-col gap-2">
+						<a
+							href="/wydania/wydanie2.pdf"
+							target="_blank"
+							className="cursor-pointer"
+						>
+							<img
+								// className="h-[400px]"
+								className="w-full h-auto lg:h-[400px]"
+								src="/images/currentNumber/wydanie2.png"
+								alt="Pierwsza strona wydania 2/2024"
+							/>
+							<h5 className="font-light text-lg lg:text-2xl text-primary text-center">
+								2/2024
+							</h5>
+						</a>
+					</li>
 				</ul>
 			</div>
 			{/* </main> */}

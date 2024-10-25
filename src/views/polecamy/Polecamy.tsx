@@ -82,6 +82,17 @@ export const PolecamyPage = () => {
 					/>
 				</a>
 				<EmintoBanner />
+				<a
+					target="_blank"
+					href="https://makromed.com.pl/produkty/?producent=560"
+					className="w-fit"
+				>
+					<img
+						className="transition duration-300 ease-in-out hover:scale-105"
+						src="/assets/polecamy/banner-owandy3.png"
+						alt="Banner Markomed"
+					/>
+				</a>
 			</main>
 		</PageLayout>
 	);
