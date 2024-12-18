@@ -1,5 +1,21 @@
 export const newsy = [
 	{
+		title: "Srebrny Spinacz dla Targów w Krakowie!",
+		imagePath: "/assets/aktualnosci/krakdent-spinacze-2024.jpeg",
+		pathToFile: "/assets/aktualnosci/krakdent-spinacze-2024.pdf",
+		content: [
+			`9 grudnia Targi w Krakowie odebrały prestiżową statuetkę Srebrnego Spinacza w największym konkursie branży PR w
+Polsce – Złote Spinacze – organizowanym przez Związek Firm Public Relations. Wyróżnienie przyznane zostało w
+kategorii Event komercyjny za strategię komunikacji 30. Międzynarodowych Targów Stomatologicznych
+KRAKDENT®.`,
+			`Ogłoszenie wyników odbyło się podczas uroczystej gali w Warszawie, którą poprowadził dziennikarz telewizyjny –
+Marcin Prokop. O laureatach decydowało 130-osobowe jury, w skład którego weszli przedstawiciele organizacji
+biznesowych i pozarządowych, praktycy oraz eksperci branży PR i mediów w Polsce, a także autorytety środowiska
+akademickiego. Przewodniczącą jury była Anna Cywińska, Dyrektor Działu Korporacyjnego i Komunikacji Grupy
+Danone w Polsce oraz Prezes Fundacji Nutricia.`,
+		],
+	},
+	{
 		title:
 			"Międzynarodowe Targi Stomatologiczne KRAKDENT® w Krakowie z nominacją w konkursie Złote Spinacze",
 		imagePath: "/assets/aktualnosci/krakdent-spinacze.png",
