@@ -112,6 +112,18 @@ export const PolecamyPage = () => {
 						alt="3z.pl"
 					/>
 				</a>
+
+				<a
+					target="_blank"
+					href="https://mikran.pl/pl/id3916/Skaner-wewnatrzustny-Runyes-3DS-V3-PRO"
+					className="w-fit"
+				>
+					<img
+						className="transition duration-300 ease-in-out hover:scale-105"
+						src="/assets/polecamy/mikran.jpg"
+						alt="Mikran - Skaner wewnątrzustny Runyes 3DS V3 PRO"
+					/>
+				</a>
 			</main>
 		</PageLayout>
 	);
