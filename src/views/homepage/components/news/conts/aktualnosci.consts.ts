@@ -1,5 +1,16 @@
 export const newsy = [
 	{
+		title:
+			"Największe targi stomatologiczne w Polsce \n Kolejna edycja: 10-12 kwietnia 2025, Kraków",
+		imagePath: "/assets/aktualnosci/krakdent-spinacze-2025.jpg",
+		pathToFile: "https://dentalspaghetti.pl/",
+		content: [
+			`Targi KRAKDENT® to międzynarodowa wystawa produktów i usług z zakresu stomatologii, połączona z programem naukowym, skierowanym do lekarzy dentystów, techników dentystycznych oraz higienistek i asystentek stomatologicznych. KRAKDENT® skierowany jest do profesjonalistów, zawodowo związanych z branżą medyczną. 
+
+Ponad 350 polskich i zagranicznych wystawców, kilkadziesiąt godzin kursów medycznych, szkoleń, warsztatów oraz <a href="https://dentalspaghetti.pl/" target="_blank">Międzynarodowy Kongres Stomatologiczny DENTAL SPAGHETTI</a> w ramach programu KRAKDENT-edu, szereg atrakcji na scenie KRAKDENT MeetUp i imponująca liczba nowości prezentowanych na stoiskach – tak w skrócie można przedstawić Międzynarodowe Targi Stomatologiczne KRAKDENT®.`,
+		],
+	},
+	{
 		title: "Srebrny Spinacz dla Targów w Krakowie!",
 		imagePath: "/assets/aktualnosci/krakdent-spinacze-2024.jpeg",
 		pathToFile: "/assets/aktualnosci/krakdent-spinacze-2024.pdf",

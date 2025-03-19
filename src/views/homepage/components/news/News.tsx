@@ -1,6 +1,6 @@
 import { Card } from "@views/wydarzenia/card/Card";
 import { newsy } from "./conts/aktualnosci.consts";
-import { SingleNews } from "./singleNews/SingleNews";
+import { parseTextWithLinks } from "src/utils/parseTextWithLinks";
 
 export const News = () => (
 	<main className="container mx-auto responsive-padding min-h-screen flex flex-col gap-4 py-16 h-full">
@@ -12,7 +12,9 @@ export const News = () => (
 				<ul className="list-disc px-2">
 					{news.content.map((paragraph, i) => (
 						<li className="text-primary" key={i}>
-							<p className="text-black text-xl lg:text-base">{paragraph}</p>
+							<p className="text-black text-xl lg:text-base">
+								{parseTextWithLinks(paragraph)}
+							</p>
 						</li>
 					))}
 				</ul>

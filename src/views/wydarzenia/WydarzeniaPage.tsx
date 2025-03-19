@@ -1,5 +1,6 @@
 import { WYDARZENIA } from "./consts/wydarzenia.consts";
 import { Card } from "./card/Card";
+import { parseTextWithLinks } from "src/utils/parseTextWithLinks";
 
 type Event = {
 	title: string;
@@ -23,7 +24,7 @@ export const WydarzeniaPage = ({ data }: { data: Event[] | [] }) => {
 							pathToFile={wydarzenie.sourceFile}
 							title={wydarzenie.title}
 							key={index}
-							children={wydarzenie.description}
+							children={parseTextWithLinks(wydarzenie.description)}
 							date={wydarzenie.date}
 						/>
 				  ))

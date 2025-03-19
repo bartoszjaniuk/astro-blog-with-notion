@@ -39,11 +39,19 @@ const getPosts = async () => {
 		const properties = results.map((result) => result.properties);
 
 		const data = properties.map((property) => {
+			console.log(
+				property.SourceFile.files[0],
+				"property.SourceFile.files[0].file.url,",
+			);
 			return {
 				title: property.Page.title[0].text.content,
 				slug: property.Slug.rich_text[0].text.content,
 				imageUrl: property.Image.files[0].file.url,
-				sourceFile: property.SourceFile.files[0].file.url,
+				sourceFile:
+					"file" in property.SourceFile.files[0]
+						? property.SourceFile.files[0].file.url
+						: property.SourceFile.files[0].name,
+
 				description: property.Excerpt.rich_text[0].text.content,
 				date: property.Date.date.start,
 			};

@@ -1,5 +1,13 @@
 export const WYDARZENIA = [
 	{
+		title:
+			"Największe targi stomatologiczne w Polsce \n Kolejna edycja: 10-12 kwietnia 2025, Kraków",
+		imagePath: "/assets/aktualnosci/krakdent-spinacze-2025.jpg",
+		pathToFile: "https://dentalspaghetti.pl/",
+		shortDesc: `Targi KRAKDENT® to międzynarodowa wystawa produktów i usług z zakresu stomatologii, połączona z programem naukowym, skierowanym do lekarzy dentystów, techników dentystycznych oraz higienistek i asystentek stomatologicznych. KRAKDENT® skierowany jest do profesjonalistów, zawodowo związanych z branżą medyczną. 
+Ponad 350 polskich i zagranicznych wystawców, kilkadziesiąt godzin kursów medycznych, szkoleń, warsztatów oraz <a href="https://dentalspaghetti.pl/" target="_blank">Międzynarodowy Kongres Stomatologiczny DENTAL SPAGHETTI</a> w ramach programu KRAKDENT-edu, szereg atrakcji na scenie KRAKDENT MeetUp i imponująca liczba nowości prezentowanych na stoiskach – tak w skrócie można przedstawić Międzynarodowe Targi Stomatologiczne KRAKDENT®.`,
+	},
+	{
 		title: "32. Środkowoeuropejska Wystawa Stomatologiczna CEDE 2024",
 		shortDesc: `Wystawa CEDE to w tej branży, najdłużej istnie-
 		jące na polskim rynku, bo od 1991 r., komplek-
@@ -25,7 +33,6 @@ chirurgiczne, cyfrową endodoncję.`,
 		imagePath: "/assets/wydarzenia/cede_2024.jpg",
 		pathToFile: "/assets/wydarzenia/cede_2024.pdf",
 	},
-
 	{
 		title: "Warsaw Dental Medica Show 7. Edycja",
 		shortDesc: `Warsaw Dental Medica Show to branżowe specjalistyczne wydarzenie odbywające się w Ptak

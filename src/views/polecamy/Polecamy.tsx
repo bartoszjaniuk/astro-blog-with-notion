@@ -5,6 +5,18 @@ export const PolecamyPage = () => {
 	return (
 		<PageLayout>
 			<main className="container p-4 flex flex-col-reverse gap-4 relative ">
+				<a target="_blank" href="https://denteq.pl/">
+					<video
+						className="transition duration-300 ease-in-out hover:scale-105"
+						muted
+						loop
+						autoPlay
+					>
+						<source src="/videos/DENTEQbaner.mp4" type="video/mp4" />
+						Przeglądarka nie jest wspierana.
+					</video>
+				</a>
+
 				<a
 					target="_blank"
 					href="https://www.dentalmedicashow.pl"
