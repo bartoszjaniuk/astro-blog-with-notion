@@ -45,7 +45,7 @@ const Wydanie = ({
 		<a
 			href={href}
 			target="_blank"
-			className="cursor-pointer flex flex-col gap-8 xl:gap-2"
+			className="cursor-pointer flex flex-col gap-2"
 		>
 			<img className="w-full h-auto xl:h-[400px]" src={src} alt={alt} />
 			<h5 className="font-light text-4xl md:text-5xl lg:text-4xl text-primary text-center">
@@ -76,7 +76,7 @@ export const ArchiwumPage = () => {
 					Rok 2024
 				</h1>
 				<div className="xl:px-16">
-					<ul className="flex list-none flex-col xl:flex-row justify-between">
+					<ul className="flex list-none flex-col xl:flex-row justify-between gap-4">
 						{WYDANIA_2024.map((wydanie) => (
 							<Wydanie key={wydanie.title} {...wydanie} />
 						))}
