@@ -58,14 +58,14 @@ export const Hero = () => {
 					</div>
 
 					<a
-						href="/wydania/wydanie3.pdf"
+						href="/wydania/wydanie4.pdf"
 						target="_blank"
 						className="group w-full md:w-fit transition-all duration-300 ease-in-out border-2 border-primary  text-primary hover:bg-primary hover:text-white rounded flex py-3 px-5 text-start"
 					>
 						<div className="text-2xl md:text-2xl md:text-start font-text font-medium tracking-wide">
 							<p className="font-semibold">Czytaj najnowszy numer</p>
 							<div className="flex items-center justify-center gap-2 ">
-								<span className="font-semibold">3/2024</span>
+								<span className="font-semibold">1/2025</span>
 								<Icon
 									width={30}
 									icon="mdi:arrow-right"
