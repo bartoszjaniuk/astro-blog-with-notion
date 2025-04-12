@@ -124,6 +124,14 @@ export const PolecamyPage = () => {
 						alt="Mikran - Skaner wewnątrzustny Runyes 3DS V3 PRO"
 					/>
 				</a>
+
+				<a target="_blank" href="https://www.scharf.pl/" className="w-fit">
+					<img
+						className="lg:min-w-[900px] transition duration-300 ease-in-out hover:scale-105"
+						src="/assets/polecamy/scharf.png"
+						alt="Scharf - narzędzia stomatologiczne i chirurgiczne"
+					/>
+				</a>
 			</main>
 		</PageLayout>
 	);
