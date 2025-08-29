@@ -1,6 +1,6 @@
 import { dropIn } from "@shared/animations/modal";
 import { AnimatePresence, motion } from "framer-motion";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useCookies } from "react-cookie";
 import { StorageKeys } from "src/utils/storage/enums/storageKeys.enum";
 

@@ -2,4 +2,5 @@ export enum StorageKeys {
 	VERIFY_USER = "isUserVerified",
 	COOKIE = "cookie",
 	PRO_USER = "isProfessionalUser",
+	SALE = "isSaleShown",
 }
