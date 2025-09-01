@@ -76,4 +76,14 @@ chirurgiczne, cyfrową endodoncję.`,
 		imagePath: "/assets/wydarzenia/roots-summit.jpeg",
 		pathToFile: "/assets/wydarzenia/roots-summit.pdf",
 	},
+	{
+		title:
+			"Z wielką przyjemnością zapraszamy Państwa do udziału w wyjątkowej, XXXI Edycji Ogólnopolskiej Konferencji i Targów Expodent 2025",
+		shortDesc: `To wydarzenie,
+które na stałe wpisało się w kalendarz branżowych spotkań, odbędzie się w
+dniach 24-25 października 2025 roku, w malowniczym Toruniu, w prestiżowej Auli
+UMK, przy ul. Gagarina 11.`,
+		imagePath: "/assets/wydarzenia/expodent_2025.png",
+		pathToFile: "/assets/wydarzenia/expodent_2025.pdf",
+	},
 ];

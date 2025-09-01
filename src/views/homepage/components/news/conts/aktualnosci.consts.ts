@@ -1,6 +1,22 @@
 export const newsy = [
 	{
 		title:
+			"Z wielką przyjemnością zapraszamy Państwa do udziału w wyjątkowej, XXXI Edycji Ogólnopolskiej Konferencji i Targów Expodent 2025",
+		content: [
+			`To wydarzenie,
+które na stałe wpisało się w kalendarz branżowych spotkań, odbędzie się w
+dniach 24-25 października 2025 roku, w malowniczym Toruniu, w prestiżowej Auli
+UMK, przy ul. Gagarina 11.`,
+			`Expodent to nie tylko konferencja i targi, to przede wszystkim miejsce, gdzie
+spotykają się pasjonaci i profesjonaliści z dziedziny stomatologii i branż pokrewnych.
+Nasza jubileuszowa edycja tego wyjątkowego wydarzenia będzie okazją do jeszcze
+bogatszej wymiany wiedzy i doświadczeń.`,
+		],
+		imagePath: "/assets/aktualnosci/expodent_2025.png",
+		pathToFile: "/assets/aktualnosci/expodent_2025.pdf",
+	},
+	{
+		title:
 			"Największe targi stomatologiczne w Polsce \n Kolejna edycja: 10-12 kwietnia 2025, Kraków",
 		imagePath: "/assets/aktualnosci/krakdent-spinacze-2025.jpg",
 		pathToFile: "https://dentalspaghetti.pl/",

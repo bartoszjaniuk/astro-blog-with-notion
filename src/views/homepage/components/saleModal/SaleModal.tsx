@@ -37,15 +37,14 @@ export const SaleModal = ({ onClose }: { onClose?: VoidFunction }) => {
 	return (
 		<BaseModal hasCloseButton isOpen={isOpen} onClose={handleClose}>
 			<div className="flex flex-col gap-4">
-				<h1 className="text-4xl">Na sprzedaż !!! </h1>
+				<h1 className="text-4xl text-red-600">Na sprzedaż !!! </h1>
 				<p className="text-lg">
-					Czasopismo
-					<span className="text-primary font-bold">
-						„Sprzęt Stomatologiczny”
-					</span>
-					. Oferta obejmuje znak towarowy czasopisma, Know-how, domenę
-					czasopisma, harmonogram wydawniczy na rynek polski oraz design i
-					layout.
+					Tytuł prasowy:
+					<img src="/public/assets/logo.png" /> Oferta obejmuje znak towarowy
+					czasopisma, Know-how, domenę czasopisma, harmonogram wydawniczy na
+					rynek polski oraz design i layout.
+					<br />
+					Powodem sprzedaży jest zmiana branży.
 				</p>
 				<p>
 					Więcej informacji pod numerem telefonu:

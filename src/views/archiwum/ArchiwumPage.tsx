@@ -30,6 +30,8 @@ const WYDANIA_2025 = [
 	},
 ];
 
+const WSZYSTKIE_WYDANIA = [...WYDANIA_2024, ...WYDANIA_2025];
+
 const Wydanie = ({
 	title,
 	alt,
@@ -58,33 +60,15 @@ const Wydanie = ({
 export const ArchiwumPage = () => {
 	return (
 		<PageLayout title="Archiwum">
-			{/* <main className="container"> */}
-			<div className="h-auto xl:h-[560px] shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px] p-2 relative flex flex-col gap-4">
-				<h1 className="text-5xl lg:text-4xl xl:text-6xl text-primary text-center font-semibold">
-					Rok 2025
-				</h1>
+			<div className="h-auto xl:h-[560px] shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px] p-2 relative flex flex-col justify-center">
 				<div className="xl:px-16">
-					<ul className="flex list-none flex-col xl:flex-row gap-4">
-						{WYDANIA_2025.map((wydanie) => (
+					<ul className="flex list-none flex-col xl:flex-row justify-between">
+						{WSZYSTKIE_WYDANIA.map((wydanie) => (
 							<Wydanie key={wydanie.title} {...wydanie} />
 						))}
 					</ul>
 				</div>
 			</div>
-			<div className="h-auto xl:h-[560px] shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px] p-2 relative flex flex-col gap-4">
-				<h1 className="text-5xl lg:text-4xl xl:text-6xl text-primary text-center font-semibold">
-					Rok 2024
-				</h1>
-				<div className="xl:px-16">
-					<ul className="flex list-none flex-col xl:flex-row justify-between gap-4">
-						{WYDANIA_2024.map((wydanie) => (
-							<Wydanie key={wydanie.title} {...wydanie} />
-						))}
-					</ul>
-				</div>
-			</div>
-
-			{/* </main> */}
 		</PageLayout>
 	);
 };

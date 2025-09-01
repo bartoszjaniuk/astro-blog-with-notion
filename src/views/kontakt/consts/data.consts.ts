@@ -16,7 +16,7 @@ export const CONTACT_DATA = {
 		},
 		{
 			fullName: "Aleksandra Kajstura-Janiuk",
-			position: "Redaktor Katalogu Branżowego",
+			position: "Redaktor",
 			imageURL: "/images/profilowe-3.png",
 			phoneNumber: "+ 570 498 067",
 			mail: "marketing@e-sprzetstomatologiczny.pl",
